@@ -1,4 +1,4 @@
-# Coarse-to-fine Deformetrica
+# Multiscale Deformetrica
 
 This code is an extension of the software Deformetrica.
 It implements a coarse-to-fine strategy for atlas construction.
