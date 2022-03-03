@@ -4,26 +4,20 @@ This code is an extension of the software Deformetrica.
 It implements a coarse-to-fine strategy for atlas construction.
 
 ## Installation
-  
+      
     git clone https://github.com/fleurgaudfernau/Deformetrica_coarse_to_fine
-
-Create a virtual environment:
-
-    conda create -n deformetrica python=3.7 && source activate deformetrica
-
-OR
 
     virtualenv -p python3 deformetrica && source deformetrica/bin/activate
 
-Install the requirements inside the new environment:
+    python3 -m pip install -r Deformetrica_multiscale/requirements.txt
 
-    python3 -m pip install -r Deformetrica_coarse_to_fine/requirements.txt
+    python3 -m pip install Deformetrica_multiscale/.
+    
+<hr style="border:1px solid #2b6777"/>
 
-Install developer version:
-
-    python3 -m pip install Deformetrica_coarse_to_fine/.
-
-
+    virtualenv -p python3 deformetrica && source deformetrica/bin/activate
+    
+    pip install git+https://github.com/fleurgaudfernau/Deformetrica_multiscale.git
 ## About Deformetrica
 
 Website: [www.deformetrica.org](http://www.deformetrica.org/)
