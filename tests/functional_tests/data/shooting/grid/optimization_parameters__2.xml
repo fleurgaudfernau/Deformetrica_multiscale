@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+    <use-rk2>On</use-rk2>
+    <gpu-mode>none</gpu-mode>
+</optimization-parameters>

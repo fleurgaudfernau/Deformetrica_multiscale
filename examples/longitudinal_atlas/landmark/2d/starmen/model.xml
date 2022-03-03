@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>LongitudinalAtlas</model-type>
+    <random-seed>42</random-seed>
+
+    <template>
+        <object id="starman">
+            <deformable-object-type>Landmark</deformable-object-type>
+            <filename>data/ForInitialization__Template.vtk</filename>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-width>1</kernel-width>
+        <number-of-sources>4</number-of-sources>
+    </deformation-parameters>
+
+</model>

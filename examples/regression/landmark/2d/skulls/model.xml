@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>Regression</model-type>
+    <dimension>2</dimension>
+
+    <template>
+        <object id="skull">
+            <deformable-object-type>Polyline</deformable-object-type>
+            <attachment-type>Varifold</attachment-type>
+            <noise-std>1</noise-std>
+            <kernel-width>20.0</kernel-width>
+            <kernel-type>torch</kernel-type>
+            <filename>data/template.vtk</filename>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-width>25</kernel-width>
+        <kernel-type>torch</kernel-type>
+        <concentration-of-timepoints>5</concentration-of-timepoints>
+    </deformation-parameters>
+
+</model>

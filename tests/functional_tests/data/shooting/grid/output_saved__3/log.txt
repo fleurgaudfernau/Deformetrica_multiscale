@@ -1,0 +1,9 @@
+Logger has been set to: DEBUG
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+nofile (soft): 1024, nofile (hard): 4096
+dtype=float64
+[ compute_shooting function ]
+Defaulting geodesic t0 to 1.
+Defaulting geodesic tmax to 1.
+Defaulting geodesic tmin to 0.
+Deformetrica.__del__()

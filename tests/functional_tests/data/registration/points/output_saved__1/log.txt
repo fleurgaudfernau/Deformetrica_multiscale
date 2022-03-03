@@ -1,0 +1,66 @@
+Logger has been set to: DEBUG
+>> No initial CP spacing given: using diffeo kernel width of 3.0
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/registration/points/output_saved__1/deformetrica-state.p.
+>> Set of 28 control points defined.
+>> Momenta initialized to zero, for 1 subjects.
+dtype=float64
+Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = -2.000E+04 	 [ attachment = -2.000E+04 ; regularity = 0.000E+00 ]
+Step size and gradient norm: 
+		3.851E-04   and   2.597E+03 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = -1.754E+04 	 [ attachment = -1.754E+04 ; regularity = -1.387E+00 ]
+Step size and gradient norm: 
+		5.776E-04   and   2.324E+03 	[ momenta ]
+------------------------------------- Iteration: 2 -------------------------------------
+Log-likelihood = -1.465E+04 	 [ attachment = -1.464E+04 ; regularity = -7.347E+00 ]
+Step size and gradient norm: 
+		8.664E-04   and   2.003E+03 	[ momenta ]
+------------------------------------- Iteration: 3 -------------------------------------
+Log-likelihood = -1.147E+04 	 [ attachment = -1.145E+04 ; regularity = -2.097E+01 ]
+Step size and gradient norm: 
+		1.300E-03   and   1.694E+03 	[ momenta ]
+------------------------------------- Iteration: 4 -------------------------------------
+Log-likelihood = -8.049E+03 	 [ attachment = -8.004E+03 ; regularity = -4.512E+01 ]
+Step size and gradient norm: 
+		1.949E-03   and   1.446E+03 	[ momenta ]
+------------------------------------- Iteration: 5 -------------------------------------
+Log-likelihood = -4.509E+03 	 [ attachment = -4.424E+03 ; regularity = -8.491E+01 ]
+Step size and gradient norm: 
+		2.924E-03   and   1.047E+03 	[ momenta ]
+------------------------------------- Iteration: 6 -------------------------------------
+Log-likelihood = -1.990E+03 	 [ attachment = -1.840E+03 ; regularity = -1.500E+02 ]
+Step size and gradient norm: 
+		4.386E-03   and   6.162E+02 	[ momenta ]
+------------------------------------- Iteration: 7 -------------------------------------
+Log-likelihood = -7.719E+02 	 [ attachment = -5.475E+02 ; regularity = -2.244E+02 ]
+Step size and gradient norm: 
+		6.579E-03   and   3.056E+02 	[ momenta ]
+------------------------------------- Iteration: 8 -------------------------------------
+Log-likelihood = -3.846E+02 	 [ attachment = -1.040E+02 ; regularity = -2.807E+02 ]
+Step size and gradient norm: 
+		9.869E-03   and   1.290E+02 	[ momenta ]
+Step size and gradient norm: 
+		4.934E-03   and   1.290E+02 	[ momenta ]
+------------------------------------- Iteration: 9 -------------------------------------
+Log-likelihood = -3.609E+02 	 [ attachment = -6.074E+01 ; regularity = -3.002E+02 ]
+Step size and gradient norm: 
+		7.402E-03   and   1.775E+02 	[ momenta ]
+Step size and gradient norm: 
+		3.701E-03   and   1.775E+02 	[ momenta ]
+Step size and gradient norm: 
+		1.850E-03   and   1.775E+02 	[ momenta ]
+------------------------------------- Iteration: 10 -------------------------------------
+Log-likelihood = -3.363E+02 	 [ attachment = -3.544E+01 ; regularity = -3.009E+02 ]
+Step size and gradient norm: 
+		2.776E-03   and   6.405E+01 	[ momenta ]
+------------------------------------- Iteration: 11 -------------------------------------
+Log-likelihood = -3.310E+02 	 [ attachment = -2.612E+01 ; regularity = -3.049E+02 ]
+Step size and gradient norm: 
+		4.163E-03   and   5.488E+01 	[ momenta ]
+Tolerance threshold met. Stopping the optimization process.
+>> Estimation took: 00 seconds
+Deformetrica.__del__()

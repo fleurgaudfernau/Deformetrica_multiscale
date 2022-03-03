@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>ScipyLBFGS</optimization-method-type>
+
+    <max-iterations>3</max-iterations>
+    <save-every-n-iters>50</save-every-n-iters>
+
+    <freeze-template>On</freeze-template>
+
+    <!--<downsampling-factor>2</downsampling-factor>-->
+
+    <convergence-tolerance>1e-6</convergence-tolerance>
+
+    <gpu-mode>none</gpu-mode>
+    <number-of-processes>5</number-of-processes>
+
+</optimization-parameters>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>BayesianAtlas</model-type>
+    <dimension>2</dimension>
+    <dtype>float64</dtype>
+    <random-seed>42</random-seed>
+
+    <template>
+        <object id="skull">
+            <deformable-object-type>Polyline</deformable-object-type>
+            <attachment-type>Varifold</attachment-type>
+            <kernel-width>20</kernel-width>
+            <kernel-type>keops</kernel-type>
+            <noise-variance-prior-normalized-dof>10</noise-variance-prior-normalized-dof>
+            <noise-variance-prior-scale-std>1</noise-variance-prior-scale-std>
+            <filename>data/template.vtk</filename>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-width>40</kernel-width>
+        <kernel-type>keops</kernel-type>
+    </deformation-parameters>
+
+    <initial-control-points>data/Atlas_ControlPoints.txt</initial-control-points>
+    <initial-momenta>data/ForInitialization_Momenta_AlmostPerfect.txt</initial-momenta>
+
+</model>

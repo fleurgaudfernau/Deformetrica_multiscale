@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>ParallelTransport</model-type>
+    <dimension>3</dimension>
+    <dtype>float64</dtype>
+
+    <initial-control-points>data/control_points.txt</initial-control-points>
+    <initial-momenta>data/momenta.txt</initial-momenta>
+
+    <initial-momenta-to-transport>data/momenta_to_transport.txt</initial-momenta-to-transport>
+
+    <template>
+        <object id="face">
+            <deformable-object-type>SurfaceMesh</deformable-object-type>
+            <attachment-type>Landmark</attachment-type>
+            <filename>data/face.vtk</filename>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-width>0.005</kernel-width>
+        <concentration-of-timepoints>3</concentration-of-timepoints>
+        <kernel-type>torch</kernel-type>
+        <tmin>0</tmin>
+        <tmax>9</tmax>
+    </deformation-parameters>
+</model>

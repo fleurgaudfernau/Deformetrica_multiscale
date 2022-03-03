@@ -1,0 +1,26 @@
+{
+    "logo": "logo.png",
+    "functions": [
+        {
+            "name": "Deterministic Atlas",
+            "file": "estimate_deterministic_atlas",
+            "image": "deterministic_atlas.png",
+            "description": "Perform an atlas"
+        },
+        {
+            "name": "Geodesic Regression",
+            "file": "estimate_geodesic_regression",
+            "image": "geodesic_regression.png",
+            "description": "Coming soon",
+            "enabled": "False"
+        },
+        {
+            "name": "Compute Parallel Transport",
+            "file": "compute_parallel_transport",
+            "image": "compute_parallel_transport.png",
+            "description": "Coming soon",
+            "enabled": "False"
+        }
+    ],
+    "footer": "Deformetrica GUI - Alpha version - Copyright 2018 - http://www.deformetrica.org"
+}

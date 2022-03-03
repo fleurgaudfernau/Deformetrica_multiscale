@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<data-set>
+    <subject id="evolution">
+        <visit id="australopithecus">
+            <age>1</age>
+            <filename object_id="skull">data/skull_australopithecus.vtk</filename>
+        </visit>
+        <visit id="habilis">
+            <age>2</age>
+            <filename object_id="skull">data/skull_habilis.vtk</filename>
+        </visit>
+        <visit id="erectus">
+            <age>3</age>
+            <filename object_id="skull">data/skull_erectus.vtk</filename>
+        </visit>
+        <visit id="sapiens">
+            <age>4</age>
+            <filename object_id="skull">data/skull_sapiens.vtk</filename>
+        </visit>
+    </subject>
+
+</data-set>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<model>
+    <model-type>Shooting</model-type>
+    <initial-control-points>data/INITIALISATIONCP.txt</initial-control-points>
+    <initial-momenta>data/INITIALISATIONMOM.txt</initial-momenta>
+    <dimension>2</dimension>
+    <template>
+        <object id="grille">
+            <deformable-object-type>Landmark</deformable-object-type>
+            <filename>data/grilleCP.vtk</filename>
+        </object>
+    </template>
+    <deformation-parameters>
+        <kernel-width>500</kernel-width>
+        <kernel-type>torch</kernel-type>
+        <concentration-of-timepoints>10</concentration-of-timepoints>
+    </deformation-parameters>
+</model>

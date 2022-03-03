@@ -1,0 +1,46 @@
+Logger has been set to: DEBUG
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/skulls/output_saved__7/deformetrica-state.p.
+>> Objects noise dimension:
+		[ skull ]	128
+>> Reading 16 initial control points from file /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/skulls/data/Atlas_ControlPoints.txt.
+>> Reading initial momenta from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/skulls/data/ForInitialization_Momenta_AlmostPerfect.txt.
+dtype=float64
+Started estimator: McmcSaem
+------------------------------------- Iteration: 0 -------------------------------------
+>> MCMC-SAEM algorithm launched for 1 iterations (0 iterations of burn-in).
+>> Proposal std re-evaluated from:
+		 0.010 	to	0.011 	[ momenta ]
+
+[ maximizing over the fixed effects with the GradientAscent optimizer ]
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = -6.370E+03 	 [ attachment = -6.370E+03 ; regularity = 0.000E+00 ]
+Step size and gradient norm: 
+		1.000E-03   and   1.009E+03 	[ landmark_points ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = -6.331E+03 	 [ attachment = -6.331E+03 ; regularity = 0.000E+00 ]
+Step size and gradient norm: 
+		1.500E-03   and   1.006E+03 	[ landmark_points ]
+------------------------------------- Iteration: 2 -------------------------------------
+Log-likelihood = -6.273E+03 	 [ attachment = -6.273E+03 ; regularity = 0.000E+00 ]
+Step size and gradient norm: 
+		2.250E-03   and   1.002E+03 	[ landmark_points ]
+------------------------------------- Iteration: 3 -------------------------------------
+Log-likelihood = -6.187E+03 	 [ attachment = -6.187E+03 ; regularity = 0.000E+00 ]
+Step size and gradient norm: 
+		3.375E-03   and   9.958E+02 	[ landmark_points ]
+------------------------------------- Iteration: 4 -------------------------------------
+Log-likelihood = -6.061E+03 	 [ attachment = -6.061E+03 ; regularity = 0.000E+00 ]
+Step size and gradient norm: 
+		5.063E-03   and   9.852E+02 	[ landmark_points ]
+------------------------------------- Iteration: 5 -------------------------------------
+Log-likelihood = -5.876E+03 	 [ attachment = -5.876E+03 ; regularity = 0.000E+00 ]
+
+[ end of the gradient-based maximization ]
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Average acceptance rates (all past iterations):
+		 40.00 	[ momenta ]
+>> Estimation took: 01 seconds
+Deformetrica.__del__()

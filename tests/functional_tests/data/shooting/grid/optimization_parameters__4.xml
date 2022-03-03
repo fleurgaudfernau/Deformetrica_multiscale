@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+    <use-rk2-for-shooting>On</use-rk2-for-shooting>
+    <gpu-mode>full</gpu-mode>
+</optimization-parameters>

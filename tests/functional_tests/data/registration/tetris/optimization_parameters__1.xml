@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>GradientAscent</optimization-method-type>
+
+    <max-iterations>2</max-iterations>
+
+
+    <gpu-mode>none</gpu-mode>
+
+</optimization-parameters>

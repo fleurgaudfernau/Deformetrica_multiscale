@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<model>
+
+	<model-type>Regression</model-type>
+
+	<dimension>3</dimension>
+
+	<template>
+		<dense-mode>On</dense-mode>
+		<object id="FaceLandmarks">
+			<deformable-object-type>PolyLine</deformable-object-type>
+			<attachment-type>Landmark</attachment-type>
+			<filename>data/ForInitialization__Template__FromUser.vtk</filename>
+			<noise-std>0.0035</noise-std>
+		</object>
+	</template>
+
+	<deformation-parameters>
+		<kernel-type>torch</kernel-type>
+		<kernel-width>0.015</kernel-width>
+		<t0>5.5</t0>
+		<concentration-of-timepoints>1</concentration-of-timepoints>
+	</deformation-parameters>
+
+</model>

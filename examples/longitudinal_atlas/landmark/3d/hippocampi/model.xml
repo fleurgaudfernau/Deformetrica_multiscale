@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>LongitudinalAtlas</model-type>
+
+    <template>
+        <object id="RightHippocampus">
+            <deformable-object-type>SurfaceMesh</deformable-object-type>
+            <attachment-type>Current</attachment-type>
+            <kernel-type>keops</kernel-type>
+            <kernel-width>5</kernel-width>
+            <filename>data/ForInitialization_Template_FromRegression_Smooth.vtk</filename>
+            <noise-std>5</noise-std>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-type>torch</kernel-type>
+        <kernel-width>10</kernel-width>
+        <concentration-of-timepoints>5</concentration-of-timepoints>
+        <number-of-timepoints>6</number-of-timepoints>
+        <!-- <number-of-sources>8</number-of-sources> -->
+    </deformation-parameters>
+
+    <initial-control-points>data/ForInitialization_ControlPoints_FromRegression_s0671_tp27.txt</initial-control-points>
+  	<initial-momenta>data/ForInitialization_Momenta_FromRegression_s0671_tp27.txt</initial-momenta>
+    <initial-modulation-matrix>data/ForInitialization_ModulationMatrix_FromAtlas.txt</initial-modulation-matrix>
+
+</model>

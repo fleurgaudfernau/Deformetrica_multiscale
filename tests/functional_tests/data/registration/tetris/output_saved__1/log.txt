@@ -1,0 +1,21 @@
+Logger has been set to: DEBUG
+>> No initial CP spacing given: using diffeo kernel width of 20.0
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/registration/tetris/output_saved__1/deformetrica-state.p.
+>> Set of 15 control points defined.
+>> Momenta initialized to zero, for 1 subjects.
+dtype=float64
+Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = -3.300E+04 	 [ attachment = -3.300E+04 ; regularity = 0.000E+00 ]
+Step size and gradient norm: 
+		1.344E-04   and   7.440E+03 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = -3.267E+04 	 [ attachment = -3.267E+04 ; regularity = -2.175E+00 ]
+Step size and gradient norm: 
+		2.016E-04   and   4.114E+03 	[ momenta ]
+------------------------------------- Iteration: 2 -------------------------------------
+Log-likelihood = -3.012E+04 	 [ attachment = -3.012E+04 ; regularity = -2.886E+00 ]
+>> Estimation took: 00 seconds
+Deformetrica.__del__()

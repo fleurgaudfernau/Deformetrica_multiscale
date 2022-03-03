@@ -1,0 +1,49 @@
+Logger has been set to: DEBUG
+>> Dense mode activated. No distinction will be made between template and control points.
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+>> Initial t0 set by the user to 5.50 ; note that the mean visit age is 17.50
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/regression/surprise/output_saved__1/deformetrica-state.p.
+>> Momenta initialized to zero.
+dtype=float64
+Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = -8.031E+03 	 [ attachment = -8.031E+03 ; regularity = -0.000E+00 ]
+Step size and gradient norm: 
+		6.609E-06   and   1.513E+05 	[ landmark_points ]
+		3.948E-07   and   2.533E+06 	[ momenta ]
+Step size and gradient norm: 
+		3.304E-06   and   1.513E+05 	[ landmark_points ]
+		1.974E-07   and   2.533E+06 	[ momenta ]
+Step size and gradient norm: 
+		1.652E-06   and   1.513E+05 	[ landmark_points ]
+		9.869E-08   and   2.533E+06 	[ momenta ]
+Step size and gradient norm: 
+		8.261E-07   and   1.513E+05 	[ landmark_points ]
+		4.934E-08   and   2.533E+06 	[ momenta ]
+Step size and gradient norm: 
+		4.131E-07   and   1.513E+05 	[ landmark_points ]
+		2.467E-08   and   2.533E+06 	[ momenta ]
+Step size and gradient norm: 
+		2.065E-07   and   1.513E+05 	[ landmark_points ]
+		1.234E-08   and   2.533E+06 	[ momenta ]
+Step size and gradient norm: 
+		1.033E-07   and   1.513E+05 	[ landmark_points ]
+		6.168E-09   and   2.533E+06 	[ momenta ]
+Step size and gradient norm: 
+		5.163E-08   and   1.513E+05 	[ landmark_points ]
+		3.084E-09   and   2.533E+06 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = -4.454E+03 	 [ attachment = -4.454E+03 ; regularity = -2.291E-05 ]
+Step size and gradient norm: 
+		5.163E-08   and   1.368E+05 	[ landmark_points ]
+		1.542E-09   and   2.414E+06 	[ momenta ]
+------------------------------------- Iteration: 2 -------------------------------------
+Log-likelihood = -2.810E+03 	 [ attachment = -2.810E+03 ; regularity = -1.621E-05 ]
+Step size and gradient norm: 
+		5.163E-08   and   1.064E+05 	[ landmark_points ]
+		7.710E-10   and   1.543E+06 	[ momenta ]
+------------------------------------- Iteration: 3 -------------------------------------
+Log-likelihood = -2.311E+03 	 [ attachment = -2.311E+03 ; regularity = -1.934E-05 ]
+>> Estimation took: 02 seconds
+Deformetrica.__del__()

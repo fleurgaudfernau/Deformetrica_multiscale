@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>McmcSaem</optimization-method-type>
+
+    <max-iterations>20</max-iterations>
+    <sample-every-n-mcmc-iters>5</sample-every-n-mcmc-iters>
+
+</optimization-parameters>

@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<data-set>
+
+    <subject id="sub1">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_1.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub2">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_2.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub3">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_3.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub4">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_4.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub5">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_5.png</filename>
+        </visit>
+    </subject>
+
+
+   <subject id="sub6">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_6.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub7">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_7.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub8">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_8.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub9">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_9.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub10">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_10.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub11">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_11.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub12">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_12.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub13">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_13.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub14">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_14.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub15">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_15.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub16">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_16.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub17">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_17.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub18">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_18.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub19">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_19.png</filename>
+        </visit>
+    </subject>
+
+
+    <subject id="sub20">
+        <visit id="t0">
+            <filename object_id="img">data/digit_2_sample_20.png</filename>
+        </visit>
+    </subject>
+
+</data-set>

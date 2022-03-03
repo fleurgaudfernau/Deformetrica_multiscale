@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>DeterministicAtlas</model-type>
+    <dimension>2</dimension>
+
+    <template>
+        <object id="img">
+            <deformable-object-type>Image</deformable-object-type>
+            <filename>data/image1.png</filename>
+            <noise-std>0.1</noise-std>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-type>torch</kernel-type>
+        <kernel-width>20</kernel-width>
+    </deformation-parameters>
+
+</model>

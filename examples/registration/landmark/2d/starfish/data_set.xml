@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<data-set>
+
+    <subject id="starfish">
+        <visit id="baseline">
+            <age>1</age>
+            <filename object_id="starfish">data/starfish_target.vtk</filename>
+        </visit>
+    </subject>
+
+</data-set>

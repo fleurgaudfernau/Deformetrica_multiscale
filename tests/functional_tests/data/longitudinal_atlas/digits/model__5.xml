@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<model>
+	    
+	<model-type>LongitudinalAtlas</model-type>
+	<dimension>2</dimension>
+	<dtype>float64</dtype>
+	<random-seed>42</random-seed>
+	    
+	<template>
+		<object id="img">
+			<deformable-object-type>Image</deformable-object-type>
+			<filename>data/ForInitialization__Template_img.png</filename>
+		</object>
+	</template>
+	    
+	<deformation-parameters>
+		<concentration-of-timepoints>5</concentration-of-timepoints>
+		<kernel-type>torch</kernel-type>
+		<kernel-width>4</kernel-width>
+		<number-of-sources>1</number-of-sources>
+	</deformation-parameters>
+
+</model>
+

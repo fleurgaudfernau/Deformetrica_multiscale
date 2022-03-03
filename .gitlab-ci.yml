@@ -1,0 +1,159 @@
+# Continuous Integration Script
+# Deformetrica - ARAMIS
+
+stages:
+  - prepare_env   # prepare conda environment defined in environment.yml
+  - test    # run unit tests
+  - package_and_deploy # package for deployment
+  - cleanup
+
+############
+# TEMPLATES
+############
+.prepare_env_template: &prepare_env
+  stage: prepare_env
+  retry: 2
+  script:
+    - id
+    - pwd
+    - ls -al
+    - if [ -f "~/.profile" ]; then . ~/.profile; fi
+    - source ~/miniconda3/etc/profile.d/conda.sh
+    - conda create -n deformetrica_env python=3.8  
+    #- conda env create --force --file environment.yml --name deformetrica_env
+    - conda activate deformetrica_env
+    - pip install numpy  # Workaround for Pykeops installation
+    - pip install -r requirements.txt
+    - conda deactivate  
+
+.unit_test_template: &unit-test
+  stage: test
+  script:
+    - if [ -f "~/.profile" ]; then . ~/.profile; fi
+    - source ~/miniconda3/etc/profile.d/conda.sh
+    - conda activate deformetrica_env
+    - echo $PYTHONPATH
+    - PYTHONPATH=$PYTHONPATH:src/:tests/ ./tests/unit_tests/run_unit_tests.py
+    - conda deactivate
+
+.functional_test_template: &functional-test
+  stage: test
+  script:
+    - if [ -f "~/.profile" ]; then . ~/.profile; fi
+    - source ~/miniconda3/etc/profile.d/conda.sh
+    - conda activate deformetrica_env
+    - echo $PYTHONPATH
+    - PYTHONPATH=$PYTHONPATH:src/:tests/ ./tests/functional_tests/run_functional_tests.py
+    - conda deactivate
+
+#.package_and_deploy_template: &package_and_deploy
+#  stage: package_and_deploy
+#  retry: 2
+#  only:
+#    - tags
+#  environment:
+#    name: anaconda
+#    url: https://anaconda.org/aramislab/deformetrica
+#  script:
+#    - id && pwd && ls -alh
+#    - mkdir deformetrica-build && cd deformetrica-build
+#    - conda install conda-build==3.16.3 anaconda-client pip && conda update conda anaconda-client
+##    - export GIT_SSL_NO_VERIFY=1
+#    - BUILD_GUI=TRUE PACKAGE_NAME=deformetrica conda-build -c pytorch -c anaconda -c conda-forge --output-folder . ../conda
+##    - BUILD_GUI=FALSE PACKAGE_NAME=deformetrica-nox conda-build --py 3.5 --py 3.6 --py 3.7 -c pytorch -c anaconda -c conda-forge --output-folder . ../conda/meta.yaml # TODO
+#    - anaconda --token=$ANACONDA_TOKEN --verbose upload --user Aramislab --force --no-progress **/*.tar.bz2
+
+
+#########
+# LINUX
+#########
+prepare_env:linux:
+  <<: *prepare_env
+  tags:
+    - linux
+
+unit-test:linux:
+  <<: *unit-test
+  tags:
+    - linux
+    - cuda
+
+functional-test:linux:
+  <<: *functional-test
+  tags:
+    - linux
+    - cuda
+
+#package_and_deploy:linux:
+#  <<: *package_and_deploy
+#  tags:
+#    - linux
+#    - package
+
+#########
+# MACOS
+#########
+prepare_env:macos:
+  <<: *prepare_env
+  tags:
+    - macos
+
+unit-test:macos:
+  <<: *unit-test
+  tags:
+    - macos
+
+functional-test:macos:
+  <<: *functional-test
+  tags:
+    - macos
+
+#package_and_deploy:macos:
+#  <<: *package_and_deploy
+#  tags:
+#    - macos
+#    - package
+
+
+###################
+# EXAMPLE DATASET
+###################
+package_and_deploy:examples:
+  stage: package_and_deploy
+  tags:
+    - linux
+    - package
+  only:
+    - tags
+  script:
+    - zip -r examples.zip examples
+    - tar -zcvf examples.tar.gz examples
+  artifacts:
+    name: examples
+    paths:
+      - examples.zip
+      - examples.tar.gz
+
+###########
+# CLEANUP
+###########
+cleanup:linux:
+  stage: cleanup
+  when: always
+  tags:
+    - linux
+  script:
+    - conda env remove --name deformetrica_env
+      #- conda-build purge
+      #- rm -rf deformetrica-build
+    - conda clean -y -a
+cleanup:macos:
+  stage: cleanup
+  when: always
+  tags:
+    - macos
+  script:
+    - conda env remove --name deformetrica_env
+      #- conda-build purge
+      #- rm -rf deformetrica-build
+    - conda clean -y -a

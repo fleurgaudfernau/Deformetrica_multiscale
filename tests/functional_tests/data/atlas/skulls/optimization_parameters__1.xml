@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>GradientAscent</optimization-method-type>
+    <!--<optimization-method-type>ScipyLBFGS</optimization-method-type>-->
+    <!--<optimization-method-type>McmcSaem</optimization-method-type>-->
+
+    <max-iterations>3</max-iterations>
+
+    <!--<save-every-n-iters>100</save-every-n-iters>-->
+    <use-sobolev-gradient>On</use-sobolev-gradient>
+
+    <!--<max-line-search-iterations>10</max-line-search-iterations>-->
+    <initial-step-size>2</initial-step-size>
+    <scale-initial-step-size>Off</scale-initial-step-size>
+
+    <!--<freeze-template>On</freeze-template>-->
+    <!--<use-sobolev-gradient>Off</use-sobolev-gradient>-->
+    <!--<sobolev-kernel-width-ratio>0.5</sobolev-kernel-width-ratio>-->
+
+    <convergence-tolerance>1e-6</convergence-tolerance>
+    <!--<number-of-processes>2</number-of-processes>-->
+    <gpu-mode>none</gpu-mode>
+
+</optimization-parameters>

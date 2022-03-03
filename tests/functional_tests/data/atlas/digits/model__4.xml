@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>BayesianAtlas</model-type>
+    <dimension>2</dimension>
+    <dtype>float64</dtype>
+
+    <template>
+        <object id="img">
+            <deformable-object-type>Image</deformable-object-type>
+            <filename>data/digit_2_mean.png</filename>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-type>torch</kernel-type>
+        <kernel-width>3</kernel-width>
+    </deformation-parameters>
+
+    <initial-control-points>data/ForInitialization__ControlPoints__FromAtlas.txt</initial-control-points>
+    <initial-momenta>data/ForInitialization__Momenta__FromAtlas.txt</initial-momenta>
+
+</model>

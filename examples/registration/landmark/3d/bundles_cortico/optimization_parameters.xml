@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+    <optimization-method-type>ScipyLBFGS</optimization-method-type>
+</optimization-parameters>

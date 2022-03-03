@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>PrincipalGeodesicAnalysis</model-type>
+    <dimension>2</dimension>
+    <latent-space-dimension>2</latent-space-dimension>
+
+    <template>
+        <object id="starmen">
+            <deformable-object-type>Landmark</deformable-object-type>
+            <filename>data/starmen_3.vtk</filename>
+            <noise-std>0.1</noise-std>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-type>torch</kernel-type>
+        <kernel-width>0.8</kernel-width>
+    </deformation-parameters>
+
+</model>

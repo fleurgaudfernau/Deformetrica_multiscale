@@ -1,0 +1,31 @@
+Logger has been set to: DEBUG
+>> It is not possible at the moment to estimate a "BayesianAtlas" model with multithreading. Overriding the "number-of-processes" option, now set to 1.
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/digits/output_saved__4/deformetrica-state.p.
+>> Setting the image grid downsampling factor to: 2.
+>> Objects noise dimension:
+		[ img ]	256
+>> Reading 36 initial control points from file /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/digits/data/ForInitialization__ControlPoints__FromAtlas.txt.
+>> Reading initial momenta from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/digits/data/ForInitialization__Momenta__FromAtlas.txt.
+dtype=float64
+Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = 7.050E+02 	 [ attachment = -6.400E+02 ; regularity = 1.345E+03 ]
+Step size and gradient norm: 
+		1.000E-05   and   4.348E+02 	[ image_intensities ]
+		1.000E-05   and   2.308E+02 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = 7.074E+02 	 [ attachment = -6.400E+02 ; regularity = 1.347E+03 ]
+Step size and gradient norm: 
+		1.500E-05   and   4.230E+02 	[ image_intensities ]
+		1.500E-05   and   2.282E+02 	[ momenta ]
+------------------------------------- Iteration: 2 -------------------------------------
+Log-likelihood = 7.108E+02 	 [ attachment = -6.399E+02 ; regularity = 1.351E+03 ]
+Step size and gradient norm: 
+		2.250E-05   and   4.067E+02 	[ image_intensities ]
+		2.250E-05   and   2.247E+02 	[ momenta ]
+------------------------------------- Iteration: 3 -------------------------------------
+Log-likelihood = 7.155E+02 	 [ attachment = -6.399E+02 ; regularity = 1.355E+03 ]
+>> Estimation took: 00 seconds
+Deformetrica.__del__()

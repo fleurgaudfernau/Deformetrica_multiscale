@@ -1,0 +1,34 @@
+Logger has been set to: DEBUG
+>> No initial CP spacing given: using diffeo kernel width of 10.0
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/brain_structures/output_saved__1/deformetrica-state.p.
+{'initial_step_size': 0.5, 'scale_initial_step_size': False, 'line_search_shrink': 0.5, 'line_search_expand': 1.5, 'max_line_search_iterations': 10, 'optimized_log_likelihood': 'complete', 'optimization_method_type': 'gradientascent', 'max_iterations': 1, 'convergence_tolerance': 0.0001, 'print_every_n_iters': 1, 'save_every_n_iters': 100, 'use_cuda': False, 'state_file': '/home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/brain_structures/output_saved__1/deformetrica-state.p', 'load_state_file': False, 'memory_length': 10}
+>> Set of 30 control points defined.
+>> Momenta initialized to zero, for 4 subjects.
+dtype=float64
+Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = -1.064E+03 	 [ attachment = -1.064E+03 ; regularity = 0.000E+00 ]
+Step size and gradient norm: 
+		5.000E-01   and   1.230E+03 	[ landmark_points ]
+		5.000E-01   and   2.218E+02 	[ momenta ]
+Step size and gradient norm: 
+		2.500E-01   and   1.230E+03 	[ landmark_points ]
+		2.500E-01   and   2.218E+02 	[ momenta ]
+Step size and gradient norm: 
+		1.250E-01   and   1.230E+03 	[ landmark_points ]
+		1.250E-01   and   2.218E+02 	[ momenta ]
+Step size and gradient norm: 
+		6.250E-02   and   1.230E+03 	[ landmark_points ]
+		6.250E-02   and   2.218E+02 	[ momenta ]
+Step size and gradient norm: 
+		3.125E-02   and   1.230E+03 	[ landmark_points ]
+		3.125E-02   and   2.218E+02 	[ momenta ]
+Step size and gradient norm: 
+		1.562E-02   and   1.230E+03 	[ landmark_points ]
+		1.562E-02   and   2.218E+02 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = -5.970E+02 	 [ attachment = -5.740E+02 ; regularity = -2.302E+01 ]
+>> Estimation took: 00 seconds
+Deformetrica.__del__()

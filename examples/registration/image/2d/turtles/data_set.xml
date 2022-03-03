@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<data-set>
+
+    <subject id="target">
+        <visit id="baseline">
+            <filename object_id="turtle">data/target.png</filename>
+        </visit>
+    </subject>
+
+</data-set>

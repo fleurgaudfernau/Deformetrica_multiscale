@@ -1,0 +1,30 @@
+No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+Logger has been set to: DEBUG
+>> No initial CP spacing given: using diffeo kernel width of 25.0
+>> It is not possible at the moment to estimate a "Regression" model with multithreading. Overriding the "number-of-processes" option, now set to 1.
+OMP_NUM_THREADS was not found in environment variables. An automatic value will be set.
+OMP_NUM_THREADS will be set to 4
+>> Initial t0 set to the mean visit age: 2.50
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /tmp/pycharm_project_752/tests/functional_tests/data/regression/skulls/output__3/deformetrica-state.p.
+>> Using a Sobolev gradient for the template data with the ScipyLBFGS estimator memory length being larger than 1. Beware: that can be tricky.
+instantiating kernel torch with kernel_width 25.0 and gpu_mode GpuMode.FULL. addr: 0x7fb27954be10
+instantiating kernel torch with kernel_width 20.0 and gpu_mode GpuMode.FULL. addr: 0x7fb275c53710
+>> Set of 49 control points defined.
+>> Momenta initialized to zero.
+dtype=float64
+>> Started estimator: ScipyOptimize
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -1.393E+05 	 [ attachment = -1.393E+05 ; regularity = -0.000E+00 ]
+>> Log-likelihood = -1.384E+05 	 [ attachment = -1.384E+05 ; regularity = -5.592E-02 ]
+>> Log-likelihood = -1.346E+05 	 [ attachment = -1.346E+05 ; regularity = -1.398E+00 ]
+>> Log-likelihood = -1.211E+05 	 [ attachment = -1.211E+05 ; regularity = -2.466E+01 ]
+
+------------------------------------- Iteration: 2 -------------------------------------
+>> Log-likelihood = -8.659E+04 	 [ attachment = -8.482E+04 ; regularity = -1.765E+03 ]
+>> STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT
+>> Estimation took: 00 seconds
+Deformetrica.__del__()

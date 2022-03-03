@@ -1,0 +1,88 @@
+Logger has been set to: DEBUG
+>> No initial CP spacing given: using diffeo kernel width of 3.0
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/principal_geodesic_analysis/digits/output_saved__1/deformetrica-state.p.
+>> Using a Sobolev gradient for the template data with the ScipyLBFGS estimator memory length being larger than 1. Beware: that can be tricky.
+{'template_data': False, 'control_points': True, 'principal_directions': False, 'noise_variance': True}
+>> Set of 36 control points defined.
+Logger has been set to: INFO
+Logger has been set to: INFO
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+context has already been set
+context has already been set
+>> The user-specified state-file does not exist: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/principal_geodesic_analysis/digits/output_saved__1/deformetrica-state.p. State cannot be reloaded. Future Deformetrica state will be saved at the given path.
+>> The user-specified state-file does not exist: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/principal_geodesic_analysis/digits/output_saved__1/deformetrica-state.p. State cannot be reloaded. Future Deformetrica state will be saved at the given path.
+>> Using a Sobolev gradient for the template data with the ScipyLBFGS estimator memory length being larger than 1. Beware: that can be tricky.
+>> Using a Sobolev gradient for the template data with the ScipyLBFGS estimator memory length being larger than 1. Beware: that can be tricky.
+{'memory_length': 10, 'freeze_template': False, 'max_line_search_iterations': 10, 'optimized_log_likelihood': 'complete', 'optimization_method_type': 'scipylbfgs', 'max_iterations': 4, 'convergence_tolerance': 0.0001, 'print_every_n_iters': 1, 'save_every_n_iters': 100, 'use_cuda': False, 'state_file': '/home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/principal_geodesic_analysis/digits/output_saved__1/deformetrica-state.p', 'load_state_file': False}
+{'memory_length': 10, 'freeze_template': False, 'max_line_search_iterations': 10, 'optimized_log_likelihood': 'complete', 'optimization_method_type': 'scipylbfgs', 'max_iterations': 4, 'convergence_tolerance': 0.0001, 'print_every_n_iters': 1, 'save_every_n_iters': 100, 'use_cuda': False, 'state_file': '/home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/principal_geodesic_analysis/digits/output_saved__1/deformetrica-state.p', 'load_state_file': False}
+>> Set of 36 control points defined.
+>> Set of 36 control points defined.
+>> Momenta initialized to zero, for 15 subjects.
+>> Momenta initialized to zero, for 15 subjects.
+Started estimator: ScipyOptimize
+Started estimator: ScipyOptimize
+
+
+>> Scipy optimization method: L-BFGS-B
+>> Scipy optimization method: L-BFGS-B
+
+
+------------------------------------- Iteration: 1 -------------------------------------
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -4.220E+04 	 [ attachment = -4.220E+04 ; regularity = 0.000E+00 ]
+>> Log-likelihood = -4.220E+04 	 [ attachment = -4.220E+04 ; regularity = 0.000E+00 ]
+>> Log-likelihood = -4.039E+04 	 [ attachment = -4.039E+04 ; regularity = -1.066E+00 ]
+>> Log-likelihood = -4.039E+04 	 [ attachment = -4.039E+04 ; regularity = -1.066E+00 ]
+
+
+------------------------------------- Iteration: 2 -------------------------------------
+------------------------------------- Iteration: 2 -------------------------------------
+>> Log-likelihood = -3.807E+04 	 [ attachment = -3.807E+04 ; regularity = -8.545E+00 ]
+>> Log-likelihood = -3.807E+04 	 [ attachment = -3.807E+04 ; regularity = -8.545E+00 ]
+
+
+------------------------------------- Iteration: 3 -------------------------------------
+------------------------------------- Iteration: 3 -------------------------------------
+>> Log-likelihood = -4.587E+04 	 [ attachment = -4.557E+04 ; regularity = -2.954E+02 ]
+>> Log-likelihood = -4.587E+04 	 [ attachment = -4.557E+04 ; regularity = -2.954E+02 ]
+>> Log-likelihood = -3.310E+04 	 [ attachment = -3.303E+04 ; regularity = -7.284E+01 ]
+>> Log-likelihood = -3.310E+04 	 [ attachment = -3.303E+04 ; regularity = -7.284E+01 ]
+
+
+------------------------------------- Iteration: 4 -------------------------------------
+------------------------------------- Iteration: 4 -------------------------------------
+>> Log-likelihood = -3.080E+04 	 [ attachment = -3.058E+04 ; regularity = -2.212E+02 ]
+>> Log-likelihood = -3.080E+04 	 [ attachment = -3.058E+04 ; regularity = -2.212E+02 ]
+>> STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT
+>> STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT
+>> Estimation took: 07 seconds
+>> Estimation took: 07 seconds
+>> Total explained variance ratio: 63.05 %
+>> Total explained variance ratio: 63.05 %
+Started estimator: ScipyOptimize
+Started estimator: ScipyOptimize
+
+
+>> Scipy optimization method: L-BFGS-B
+>> Scipy optimization method: L-BFGS-B
+
+
+------------------------------------- Iteration: 1 -------------------------------------
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -1.774E+04 	 [ attachment = -1.772E+04 ; regularity = -1.500E+01 ]
+>> Log-likelihood = -1.774E+04 	 [ attachment = -1.772E+04 ; regularity = -1.500E+01 ]
+>> Log-likelihood = -1.587E+04 	 [ attachment = -1.586E+04 ; regularity = -1.491E+01 ]
+>> Log-likelihood = -1.587E+04 	 [ attachment = -1.586E+04 ; regularity = -1.491E+01 ]
+
+
+------------------------------------- Iteration: 2 -------------------------------------
+------------------------------------- Iteration: 2 -------------------------------------
+>> Log-likelihood = -1.484E+04 	 [ attachment = -1.483E+04 ; regularity = -1.563E+01 ]
+>> Log-likelihood = -1.484E+04 	 [ attachment = -1.483E+04 ; regularity = -1.563E+01 ]
+>> STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT
+>> STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT
+>> Estimation took: 03 seconds
+>> Estimation took: 03 seconds

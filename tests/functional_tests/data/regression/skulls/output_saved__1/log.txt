@@ -1,0 +1,25 @@
+Logger has been set to: DEBUG
+>> No initial CP spacing given: using diffeo kernel width of 25.0
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+>> Initial t0 set by the user to 1.00 ; note that the mean visit age is 2.50
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/regression/skulls/output_saved__1/deformetrica-state.p.
+>> Using a Sobolev gradient for the template data with the ScipyLBFGS estimator memory length being larger than 1. Beware: that can be tricky.
+>> Set of 49 control points defined.
+>> Momenta initialized to zero.
+dtype=float64
+Started estimator: ScipyOptimize
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -1.393E+05 	 [ attachment = -1.393E+05 ; regularity = -0.000E+00 ]
+>> Log-likelihood = -1.369E+05 	 [ attachment = -1.369E+05 ; regularity = -3.366E-01 ]
+>> Log-likelihood = -1.276E+05 	 [ attachment = -1.276E+05 ; regularity = -8.416E+00 ]
+>> Log-likelihood = -1.077E+05 	 [ attachment = -1.076E+05 ; regularity = -1.485E+02 ]
+
+------------------------------------- Iteration: 2 -------------------------------------
+>> Log-likelihood = -8.714E+04 	 [ attachment = -8.665E+04 ; regularity = -4.886E+02 ]
+>> STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT
+>> Estimation took: 01 seconds
+Deformetrica.__del__()

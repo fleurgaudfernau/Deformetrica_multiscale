@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<model>
+	    
+	<model-type>LongitudinalAtlas</model-type>
+	<dimension>3</dimension>
+	<template>
+		<dense-mode>On</dense-mode>
+		<object id="FaceLandmarks">
+			<deformable-object-type>PolyLine</deformable-object-type>
+			<attachment-type>Landmark</attachment-type>
+			<filename>data/ForInitialization__Template_FaceLandmarks__FromLongitudinalAtlas.vtk</filename>
+			<noise-std>0.0035</noise-std>
+		</object>
+	</template>
+	    
+	<deformation-parameters>
+		<kernel-type>torch</kernel-type>
+		<kernel-width>0.015</kernel-width>
+		<number-of-sources>4</number-of-sources>
+		<concentration-of-timepoints>1</concentration-of-timepoints>
+		<t0>5.6213</t0>
+	</deformation-parameters>
+	<initial-control-points>data/ForInitialization__ControlPoints__FromLongitudinalAtlas.txt</initial-control-points>
+	<initial-momenta>data/ForInitialization__Momenta__FromLongitudinalAtlas.txt</initial-momenta>
+	<initial-modulation-matrix>data/ForInitialization__ModulationMatrix__FromLongitudinalAtlas.txt</initial-modulation-matrix>
+	<initial-sources>data/ForInitialization__Sources__FromLongitudinalAtlas.txt</initial-sources>
+	<initial-onset-ages>data/ForInitialization_OnsetAges_FromLongitudinalAtlas.txt</initial-onset-ages>
+	<initial-log-accelerations>data/ForInitialization__LogAccelerations__FromLongitudinalAtlas.txt</initial-log-accelerations>
+	<initial-time-shift-std>10.7291</initial-time-shift-std>
+	<initial-log-acceleration-std>0.3392</initial-log-acceleration-std>
+</model>
+

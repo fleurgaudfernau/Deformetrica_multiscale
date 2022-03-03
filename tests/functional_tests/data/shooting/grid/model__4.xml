@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>Shooting</model-type>
+    <dimension>2</dimension>
+    <dtype>float64</dtype>
+
+    <template>
+        <object id="grid">
+            <deformable-object-type>Landmark</deformable-object-type>
+            <filename>data/grid.vtk</filename>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-width>500</kernel-width>
+        <kernel-type>keops</kernel-type>
+        <concentration-of-timepoints>7</concentration-of-timepoints>
+    </deformation-parameters>
+
+    <initial-control-points>data/control_points.txt</initial-control-points>
+    <initial-momenta>data/momenta.txt</initial-momenta>
+</model>

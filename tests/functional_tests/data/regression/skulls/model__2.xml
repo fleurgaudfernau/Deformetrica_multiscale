@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>Regression</model-type>
+    <dimension>2</dimension>
+    <dtype>float64</dtype>
+
+    <template>
+        <object id="skull">
+            <deformable-object-type>Polyline</deformable-object-type>
+            <attachment-type>Varifold</attachment-type>
+            <noise-std>1</noise-std>
+            <kernel-width>15.0</kernel-width>
+            <kernel-type>keops</kernel-type>
+            <filename>data/template.vtk</filename>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-width>30</kernel-width>
+        <kernel-type>keops</kernel-type>
+        <concentration-of-timepoints>10</concentration-of-timepoints>
+    </deformation-parameters>
+
+</model>

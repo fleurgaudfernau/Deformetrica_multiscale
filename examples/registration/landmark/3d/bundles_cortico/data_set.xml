@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<data-set>
+    <subject id="subj1">
+        <visit id="experiment">
+            <filename object_id="bundle">data/subject_bundle.vtk</filename>
+            <filename object_id="putamen">data/subject_putamen.vtk</filename>
+        </visit>
+    </subject>
+</data-set>

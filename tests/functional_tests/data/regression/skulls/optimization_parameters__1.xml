@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+     <optimization-method-type>ScipyLBFGS</optimization-method-type>
+
+    <max-iterations>2</max-iterations>
+    <sobolev-kernel-width-ratio>0.8</sobolev-kernel-width-ratio>
+
+    <gpu-mode>none</gpu-mode>
+
+</optimization-parameters>

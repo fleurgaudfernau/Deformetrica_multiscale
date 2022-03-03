@@ -1,0 +1,358 @@
+Logger has been set to: DEBUG
+Logger has been set to: INFO
+>> No initial CP spacing given: using diffeo kernel width of 1.0
+OMP_NUM_THREADS was not found in environment variables. An automatic value will be set.
+OMP_NUM_THREADS will be set to 2
+>> Initial t0 set to the mean visit age: 70.00
+>> Initial time-shift std set to the empirical std of the visit ages: 1.41
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/deformetrica-state.p.
+[ estimate an atlas from baseline data ]
+
+>> No initial CP spacing given: using diffeo kernel width of 1.0
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=2
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/1_atlas_on_baseline_data/deformetrica-state.p.
+>> Objects noise dimension:
+		[ starman ]	230
+>> Set of 16 control points defined.
+>> Momenta initialized to zero, for 5 subjects.
+Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = 2.464E+02 	 [ attachment = -5.750E+02 ; regularity = 8.214E+02 ]
+Step size and gradient norm: 
+		3.544E-05   and   2.821E+03 	[ landmark_points ]
+		2.401E-04   and   4.165E+02 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = 3.039E+02 	 [ attachment = -5.744E+02 ; regularity = 8.783E+02 ]
+Step size and gradient norm: 
+		5.316E-05   and   2.911E+03 	[ landmark_points ]
+		3.601E-04   and   3.837E+02 	[ momenta ]
+------------------------------------- Iteration: 2 -------------------------------------
+Log-likelihood = 3.896E+02 	 [ attachment = -5.734E+02 ; regularity = 9.630E+02 ]
+>> Estimation took: 00 seconds
+
+[ compute individual geodesic regressions ]
+
+[ geodesic regression for subject s0 ]
+
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=2
+>> Initial t0 set by the user to 68.00 ; note that the mean visit age is 70.00
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/2_individual_geodesic_regressions/GeodesicRegression__subject_s0/deformetrica-state.p.
+>> Reading 16 initial control points from file /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/2_individual_geodesic_regressions/tmp/regression_control_points__s0.txt.
+>> Momenta initialized to zero.
+Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = -1.122E+02 	 [ attachment = -1.122E+02 ; regularity = -0.000E+00 ]
+Step size and gradient norm: 
+		6.777E-04   and   1.476E+02 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = -1.088E+02 	 [ attachment = -1.088E+02 ; regularity = -1.935E-02 ]
+Step size and gradient norm: 
+		1.016E-03   and   1.411E+02 	[ momenta ]
+Step size and gradient norm: 
+		5.082E-04   and   1.411E+02 	[ momenta ]
+Step size and gradient norm: 
+		2.541E-04   and   1.411E+02 	[ momenta ]
+------------------------------------- Iteration: 2 -------------------------------------
+Log-likelihood = -1.063E+02 	 [ attachment = -1.063E+02 ; regularity = -1.255E-02 ]
+>> Estimation took: 00 seconds
+
+[ geodesic regression for subject s1 ]
+
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=2
+>> Initial t0 set by the user to 68.00 ; note that the mean visit age is 70.00
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/2_individual_geodesic_regressions/GeodesicRegression__subject_s1/deformetrica-state.p.
+>> Reading 16 initial control points from file /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/2_individual_geodesic_regressions/tmp/regression_control_points__s1.txt.
+>> Momenta initialized to zero.
+Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = -3.903E+01 	 [ attachment = -3.903E+01 ; regularity = -0.000E+00 ]
+Step size and gradient norm: 
+		5.903E-04   and   1.694E+02 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = -3.531E+01 	 [ attachment = -3.529E+01 ; regularity = -2.038E-02 ]
+Step size and gradient norm: 
+		8.854E-04   and   1.492E+02 	[ momenta ]
+Step size and gradient norm: 
+		4.427E-04   and   1.492E+02 	[ momenta ]
+------------------------------------- Iteration: 2 -------------------------------------
+Log-likelihood = -3.288E+01 	 [ attachment = -3.287E+01 ; regularity = -8.445E-03 ]
+>> Estimation took: 00 seconds
+
+[ geodesic regression for subject s2 ]
+
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=2
+>> Initial t0 set by the user to 68.00 ; note that the mean visit age is 70.00
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/2_individual_geodesic_regressions/GeodesicRegression__subject_s2/deformetrica-state.p.
+>> Reading 16 initial control points from file /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/2_individual_geodesic_regressions/tmp/regression_control_points__s2.txt.
+>> Momenta initialized to zero.
+Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = -7.020E+01 	 [ attachment = -7.020E+01 ; regularity = -0.000E+00 ]
+Step size and gradient norm: 
+		5.383E-04   and   1.858E+02 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = -6.780E+01 	 [ attachment = -6.778E+01 ; regularity = -2.227E-02 ]
+Step size and gradient norm: 
+		8.074E-04   and   1.763E+02 	[ momenta ]
+Step size and gradient norm: 
+		4.037E-04   and   1.763E+02 	[ momenta ]
+------------------------------------- Iteration: 2 -------------------------------------
+Log-likelihood = -6.537E+01 	 [ attachment = -6.536E+01 ; regularity = -6.449E-03 ]
+>> Estimation took: 00 seconds
+
+[ geodesic regression for subject s3 ]
+
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=2
+>> Initial t0 set by the user to 68.00 ; note that the mean visit age is 70.00
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/2_individual_geodesic_regressions/GeodesicRegression__subject_s3/deformetrica-state.p.
+>> Reading 16 initial control points from file /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/2_individual_geodesic_regressions/tmp/regression_control_points__s3.txt.
+>> Momenta initialized to zero.
+Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = -5.538E+01 	 [ attachment = -5.538E+01 ; regularity = -0.000E+00 ]
+Step size and gradient norm: 
+		1.474E-03   and   6.784E+01 	[ momenta ]
+Step size and gradient norm: 
+		7.370E-04   and   6.784E+01 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = -5.506E+01 	 [ attachment = -5.505E+01 ; regularity = -4.847E-03 ]
+Step size and gradient norm: 
+		1.106E-03   and   8.132E+01 	[ momenta ]
+Step size and gradient norm: 
+		5.528E-04   and   8.132E+01 	[ momenta ]
+------------------------------------- Iteration: 2 -------------------------------------
+Log-likelihood = -5.495E+01 	 [ attachment = -5.495E+01 ; regularity = -1.991E-03 ]
+>> Estimation took: 00 seconds
+
+[ geodesic regression for subject s4 ]
+
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=2
+>> Initial t0 set by the user to 68.00 ; note that the mean visit age is 70.00
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/2_individual_geodesic_regressions/GeodesicRegression__subject_s4/deformetrica-state.p.
+>> Reading 16 initial control points from file /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/2_individual_geodesic_regressions/tmp/regression_control_points__s4.txt.
+>> Momenta initialized to zero.
+Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = -7.704E+01 	 [ attachment = -7.704E+01 ; regularity = -0.000E+00 ]
+Step size and gradient norm: 
+		3.418E-04   and   2.926E+02 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = -6.243E+01 	 [ attachment = -6.241E+01 ; regularity = -2.108E-02 ]
+Step size and gradient norm: 
+		5.127E-04   and   9.967E+01 	[ momenta ]
+------------------------------------- Iteration: 2 -------------------------------------
+Log-likelihood = -6.022E+01 	 [ attachment = -6.020E+01 ; regularity = -2.156E-02 ]
+>> Estimation took: 00 seconds
+
+[ initializing heuristics for individual accelerations and onset ages ]
+
+>> Subject s2 seems to evolve against the population: scalar_product = -4.691E-04.
+>> Estimated fixed effects:
+		 time_shift_std    =	0.000
+		 acceleration_std  =	0.311
+>> Estimated random effect statistics:
+		 onset_ages    =	70.000	[ mean ]	+/-	0.0000	[std]
+		 accelerations =	1.0019	[ mean ]	+/-	0.3096	[std]
+
+[ shoot from the average baseline age to the global average ]
+
+[ tangent-space ICA on the projected individual momenta ]
+
+>> Mean relative residual: 91.625 %.
+>> Estimated random effect statistics:
+		 sources =	-0.000	[ mean ]	+/-	1.0000	[std]
+
+[ longitudinal registration of all subjects ]
+
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=2
+>> Initial t0 set to the mean visit age: 70.00
+>> Initial time-shift std set to the empirical std of the visit ages: 1.41
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/4_longitudinal_registration/deformetrica-state.p.
+>> Using a Sobolev gradient for the template data with the ScipyLBFGS estimator memory length being larger than 1. Beware: that can be tricky.
+
+[ estimate_longitudinal_registration function ]
+
+[ longitudinal registration of subject s0 ]
+
+>> Objects noise dimension:
+		[ starman ]	230
+>> Reading 16 initial control points from file data/ForInitialization__ControlPoints__FromAtlasAndShooting.txt.
+>> Reading initial momenta from file: data/ForInitialization__Momenta__FromRegressionsAndShooting.txt.
+>> Reading 4-source initial modulation matrix from file: data/ForInitialization__ModulationMatrix__FromICA.txt
+>> Reading initial sources from file: data/ForInitialization__Sources__FromICA.txt
+>> Reading initial onset ages from file: data/ForInitialization__OnsetAges__FromHeuristic.txt
+>> Reading initial accelerations from file: data/ForInitialization__Accelerations__FromHeuristic.txt
+
+[ update method of the ScipyOptimize optimizer ]
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -6.741E+01 	 [ attachment = -6.539E+01 ; regularity = -2.022E+00 ]
+>> Log-likelihood = -6.800E+01 	 [ attachment = -6.381E+01 ; regularity = -4.191E+00 ]
+>> Number of line search loops exceeded. Stopping.
+
+>> Estimation took: 00:00:00
+
+[ longitudinal registration of subject s1 ]
+
+>> Objects noise dimension:
+		[ starman ]	230
+>> Reading 16 initial control points from file data/ForInitialization__ControlPoints__FromAtlasAndShooting.txt.
+>> Reading initial momenta from file: data/ForInitialization__Momenta__FromRegressionsAndShooting.txt.
+>> Reading 4-source initial modulation matrix from file: data/ForInitialization__ModulationMatrix__FromICA.txt
+>> Reading initial sources from file: data/ForInitialization__Sources__FromICA.txt
+>> Reading initial onset ages from file: data/ForInitialization__OnsetAges__FromHeuristic.txt
+>> Reading initial accelerations from file: data/ForInitialization__Accelerations__FromHeuristic.txt
+
+[ update method of the ScipyOptimize optimizer ]
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -2.365E+01 	 [ attachment = -2.164E+01 ; regularity = -2.015E+00 ]
+>> Log-likelihood = -2.210E+01 	 [ attachment = -2.077E+01 ; regularity = -1.330E+00 ]
+
+------------------------------------- Iteration: 2 -------------------------------------
+>> Log-likelihood = -2.060E+01 	 [ attachment = -2.025E+01 ; regularity = -3.529E-01 ]
+>> STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT
+
+>> Estimation took: 00:00:00
+
+[ longitudinal registration of subject s2 ]
+
+>> Objects noise dimension:
+		[ starman ]	230
+>> Reading 16 initial control points from file data/ForInitialization__ControlPoints__FromAtlasAndShooting.txt.
+>> Reading initial momenta from file: data/ForInitialization__Momenta__FromRegressionsAndShooting.txt.
+>> Reading 4-source initial modulation matrix from file: data/ForInitialization__ModulationMatrix__FromICA.txt
+>> Reading initial sources from file: data/ForInitialization__Sources__FromICA.txt
+>> Reading initial onset ages from file: data/ForInitialization__OnsetAges__FromHeuristic.txt
+>> Reading initial accelerations from file: data/ForInitialization__Accelerations__FromHeuristic.txt
+
+[ update method of the ScipyOptimize optimizer ]
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -4.729E+01 	 [ attachment = -4.527E+01 ; regularity = -2.022E+00 ]
+>> Log-likelihood = -4.509E+01 	 [ attachment = -4.354E+01 ; regularity = -1.550E+00 ]
+
+------------------------------------- Iteration: 2 -------------------------------------
+>> Log-likelihood = -4.503E+01 	 [ attachment = -4.072E+01 ; regularity = -4.314E+00 ]
+>> Log-likelihood = -4.389E+01 	 [ attachment = -4.077E+01 ; regularity = -3.122E+00 ]
+>> STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT
+
+>> Estimation took: 00:00:00
+
+[ longitudinal registration of subject s3 ]
+
+>> Objects noise dimension:
+		[ starman ]	230
+>> Reading 16 initial control points from file data/ForInitialization__ControlPoints__FromAtlasAndShooting.txt.
+>> Reading initial momenta from file: data/ForInitialization__Momenta__FromRegressionsAndShooting.txt.
+>> Reading 4-source initial modulation matrix from file: data/ForInitialization__ModulationMatrix__FromICA.txt
+>> Reading initial sources from file: data/ForInitialization__Sources__FromICA.txt
+>> Reading initial onset ages from file: data/ForInitialization__OnsetAges__FromHeuristic.txt
+>> Reading initial accelerations from file: data/ForInitialization__Accelerations__FromHeuristic.txt
+
+[ update method of the ScipyOptimize optimizer ]
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -3.815E+01 	 [ attachment = -3.483E+01 ; regularity = -3.322E+00 ]
+>> Log-likelihood = -3.684E+01 	 [ attachment = -3.479E+01 ; regularity = -2.041E+00 ]
+
+------------------------------------- Iteration: 2 -------------------------------------
+>> Log-likelihood = -3.569E+01 	 [ attachment = -3.445E+01 ; regularity = -1.240E+00 ]
+>> STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT
+
+>> Estimation took: 00:00:00
+
+[ longitudinal registration of subject s4 ]
+
+>> Objects noise dimension:
+		[ starman ]	230
+>> Reading 16 initial control points from file data/ForInitialization__ControlPoints__FromAtlasAndShooting.txt.
+>> Reading initial momenta from file: data/ForInitialization__Momenta__FromRegressionsAndShooting.txt.
+>> Reading 4-source initial modulation matrix from file: data/ForInitialization__ModulationMatrix__FromICA.txt
+>> Reading initial sources from file: data/ForInitialization__Sources__FromICA.txt
+>> Reading initial onset ages from file: data/ForInitialization__OnsetAges__FromHeuristic.txt
+>> Reading initial accelerations from file: data/ForInitialization__Accelerations__FromHeuristic.txt
+
+[ update method of the ScipyOptimize optimizer ]
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -4.397E+01 	 [ attachment = -4.086E+01 ; regularity = -3.101E+00 ]
+>> Log-likelihood = -4.237E+01 	 [ attachment = -3.993E+01 ; regularity = -2.443E+00 ]
+
+------------------------------------- Iteration: 2 -------------------------------------
+>> Log-likelihood = -4.138E+01 	 [ attachment = -3.996E+01 ; regularity = -1.421E+00 ]
+>> STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT
+
+>> Estimation took: 00:00:00
+
+[ save the aggregated registration parameters of all subjects ]
+
+>> Objects noise dimension:
+		[ starman ]	230
+>> Reading 16 initial control points from file data/ForInitialization__ControlPoints__FromAtlasAndShooting.txt.
+>> Reading initial momenta from file: data/ForInitialization__Momenta__FromRegressionsAndShooting.txt.
+>> Reading 4-source initial modulation matrix from file: data/ForInitialization__ModulationMatrix__FromICA.txt
+>> Reading initial sources from file: /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/4_longitudinal_registration/tmp/sources.txt
+>> Reading initial onset ages from file: /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/4_longitudinal_registration/tmp/onset_ages.txt
+>> Reading initial accelerations from file: /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/4_longitudinal_registration/tmp/acceleration.txt
+
+>> Estimated fixed effects:
+		 time_shift_std    =	0.377
+		 acceleration_std  =	0.128
+>> Estimated random effect statistics:
+		 onset_ages    =	69.949	[ mean ]	+/-	0.3773	[std]
+		 accelerations =	1.0000	[ mean ]	+/-	0.1280	[std]
+		 sources       =	-0.0476	[ mean ]	+/-	0.8619	[std]
+
+[ longitudinal atlas estimation with the GradientAscent optimizer ]
+
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=2
+>> Initial t0 set to the mean visit age: 70.00
+>> Initial time-shift std set by the user to 0.38 ; note that the empirical std of the visit ages is 1.41
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /Users/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/starmen/output__6/5_longitudinal_atlas_with_gradient_ascent/deformetrica-state.p.
+>> Objects noise dimension:
+		[ starman ]	230
+>> Reading 16 initial control points from file data/ForInitialization__ControlPoints__FromAtlasAndShooting.txt.
+>> Reading initial momenta from file: data/ForInitialization__Momenta__RescaledWithLongitudinalRegistration.txt.
+>> Momenta prior std set to 3.833E-01.
+>> Reading 4-source initial modulation matrix from file: data/ForInitialization__ModulationMatrix__FromICA.txt
+>> The time shift variance prior degrees of freedom parameter is ARBITRARILY set to 1.
+>> The acceleration variance prior degrees of freedom parameter is ARBITRARILY set to 1.
+>> Reading initial sources from file: data/ForInitialization__Sources__FromLongitudinalRegistration.txt
+>> Reading initial onset ages from file: data/ForInitialization__OnsetAges__FromLongitudinalRegistration.txt
+>> Reading initial accelerations from file: data/ForInitialization__Accelerations__FromLongitudinalRegistration.txt
+Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = -2.008E+02 	 [ attachment = -2.008E+02 ; regularity = 0.000E+00 ]
+Step size and gradient norm: 
+		8.572E-05   and   1.167E+03 	[ landmark_points ]
+		1.901E-04   and   5.260E+02 	[ momenta ]
+		2.235E-04   and   4.474E+02 	[ modulation_matrix ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = -1.548E+02 	 [ attachment = -1.548E+02 ; regularity = -4.403E-02 ]
+Step size and gradient norm: 
+		1.286E-04   and   1.161E+03 	[ landmark_points ]
+		2.852E-04   and   3.814E+02 	[ momenta ]
+		3.352E-04   and   1.400E+02 	[ modulation_matrix ]
+------------------------------------- Iteration: 2 -------------------------------------
+Log-likelihood = -1.133E+02 	 [ attachment = -1.131E+02 ; regularity = -1.715E-01 ]
+>> Estimation took: 03 seconds

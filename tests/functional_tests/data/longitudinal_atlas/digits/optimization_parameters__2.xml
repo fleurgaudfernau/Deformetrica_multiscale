@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>McmcSaem</optimization-method-type>
+
+    <max-iterations>1</max-iterations>
+    <sample-every-n-mcmc-iters>2</sample-every-n-mcmc-iters>
+
+    <initial-step-size>1e-6</initial-step-size>
+
+    <downsampling-factor>3</downsampling-factor>
+    <number-of-processes>1</number-of-processes>
+
+</optimization-parameters>

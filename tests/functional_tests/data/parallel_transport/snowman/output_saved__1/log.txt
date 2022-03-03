@@ -1,0 +1,6 @@
+Logger has been set to: DEBUG
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+nofile (soft): 1024, nofile (hard): 4096
+dtype=float64
+time taken to compute parallel_transport: 0.015138110145926476
+Deformetrica.__del__()

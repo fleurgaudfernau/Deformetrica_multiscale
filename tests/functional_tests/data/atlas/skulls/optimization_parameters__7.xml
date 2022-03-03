@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <!--<optimization-method-type>GradientAscent</optimization-method-type>-->
+    <!--<optimization-method-type>ScipyLBFGS</optimization-method-type>-->
+    <optimization-method-type>McmcSaem</optimization-method-type>
+
+    <max-iterations>1</max-iterations>
+    <max-line-search-iterations>1</max-line-search-iterations>
+    <sample-every-n-mcmc-iters>5</sample-every-n-mcmc-iters>
+
+    <!--<save-every-n-iters>5</save-every-n-iters>-->
+
+    <!--<max-line-search-iterations>10</max-line-search-iterations>-->
+    <scale-initial-step-size>Off</scale-initial-step-size>
+    <initial-step-size>1e-3</initial-step-size>
+
+    <!--<freeze-template>On</freeze-template>-->
+    <!--<use-sobolev-gradient>Off</use-sobolev-gradient>-->
+    <!--<sobolev-kernel-width-ratio>0.5</sobolev-kernel-width-ratio>-->
+
+    <convergence-tolerance>1e-6</convergence-tolerance>
+    <!--<number-of-processes>8</number-of-processes>-->
+    <gpu-mode>none</gpu-mode>
+
+    <!--<state-file>data/deformetrica-state.p</state-file>-->
+
+</optimization-parameters>

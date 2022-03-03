@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<data-set>
+	<subject id="sub-ADNI002S0729">
+		<visit id="ses-M00">
+			<age>65.10</age>
+			<filename object_id="RightHippocampus">data/sub-ADNI002S0729_ses-M00.vtk</filename>
+		</visit>
+		<visit id="ses-M84">
+			<age>72.12</age>
+			<filename object_id="RightHippocampus">data/sub-ADNI002S0729_ses-M84.vtk</filename>
+		</visit>
+	</subject>
+	<subject id="sub-ADNI002S1070">
+		<visit id="ses-M00">
+			<age>73.60</age>
+			<filename object_id="RightHippocampus">data/sub-ADNI002S1070_ses-M00.vtk</filename>
+		</visit>
+		<visit id="ses-M36">
+			<age>76.60</age>
+			<filename object_id="RightHippocampus">data/sub-ADNI002S1070_ses-M36.vtk</filename>
+		</visit>
+	</subject>
+	<subject id="sub-ADNI002S1268">
+		<visit id="ses-M00">
+			<age>82.70</age>
+			<filename object_id="RightHippocampus">data/sub-ADNI002S1268_ses-M00.vtk</filename>
+		</visit>
+		<visit id="ses-M60">
+			<age>87.72</age>
+			<filename object_id="RightHippocampus">data/sub-ADNI002S1268_ses-M60.vtk</filename>
+		</visit>
+	</subject>
+	<subject id="sub-ADNI002S4171">
+		<visit id="ses-M00">
+			<age>69.40</age>
+			<filename object_id="RightHippocampus">data/sub-ADNI002S4171_ses-M00.vtk</filename>
+		</visit>
+		<visit id="ses-M12">
+			<age>70.39</age>
+			<filename object_id="RightHippocampus">data/sub-ADNI002S4171_ses-M12.vtk</filename>
+		</visit>
+	</subject>
+</data-set>
+

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>GradientAscent</optimization-method-type>
+    <initial-step-size>1e-2</initial-step-size>
+
+</optimization-parameters>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>Regression</model-type>
+    <dimension>2</dimension>
+
+    <template>
+        <object id="img">
+            <deformable-object-type>Image</deformable-object-type>
+            <filename>data/cross_0.png</filename>
+            <noise-std>0.1</noise-std>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <concentration-of-time-points>3</concentration-of-time-points>
+        <kernel-width>10</kernel-width>
+        <!--<t0>0</t0>-->
+    </deformation-parameters>
+
+</model>

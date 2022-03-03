@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<model>
+    <model-type>Registration</model-type>
+    <dimension>2</dimension>
+    <template>
+        <object id="pointcloud">
+            <deformable-object-type>Landmark</deformable-object-type>
+            <noise-std>1e3</noise-std>
+            <filename>data/source_points.vtk</filename>
+        </object>
+    </template>
+    <deformation-parameters>
+        <kernel-width>3</kernel-width>
+        <kernel-type>torch</kernel-type>
+        <number-of-timepoints>10</number-of-timepoints>
+    </deformation-parameters>
+</model>

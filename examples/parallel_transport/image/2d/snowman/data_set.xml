@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<data-set>
+
+    <subject id="image">
+        <visit id="experiment">
+            <filename object_id="img">data/I1.png</filename>
+        </visit>
+    </subject>
+
+</data-set>

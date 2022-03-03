@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>ParallelTransport</model-type>
+    <dimension>2</dimension>
+    <dtype>float64</dtype>
+
+    <initial-control-points>data/Reference_progression_ControlPoints.txt</initial-control-points>
+    <initial-momenta>data/Reference_progression_Momenta.txt</initial-momenta>
+
+    <initial-control-points-to-transport>data/Registration_ControlPoints.txt</initial-control-points-to-transport>
+    <initial-momenta-to-transport>data/Registration_Momenta.txt</initial-momenta-to-transport>
+
+    <template>
+        <object id="img">
+            <deformable-object-type>Image</deformable-object-type>
+            <filename>data/I1.png</filename>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-width>15.0</kernel-width>
+        <concentration-of-timepoints>10</concentration-of-timepoints>
+        <kernel-type>torch</kernel-type>
+        <tmin>0</tmin>
+        <tmax>1</tmax>
+    </deformation-parameters>
+</model>

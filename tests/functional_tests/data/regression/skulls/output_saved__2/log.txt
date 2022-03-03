@@ -1,0 +1,24 @@
+Logger has been set to: DEBUG
+>> No initial CP spacing given: using diffeo kernel width of 30.0
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+>> Initial t0 set to the mean visit age: 2.50
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/regression/skulls/output_saved__2/deformetrica-state.p.
+>> Set of 36 control points defined.
+>> Momenta initialized to zero.
+dtype=float64
+Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = -1.248E+05 	 [ attachment = -1.248E+05 ; regularity = -0.000E+00 ]
+Step size and gradient norm: 
+		1.065E-03   and   9.391E+02 	[ landmark_points ]
+		7.516E-04   and   1.330E+03 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = -1.226E+05 	 [ attachment = -1.226E+05 ; regularity = -1.951E+00 ]
+Step size and gradient norm: 
+		1.597E-03   and   9.114E+02 	[ landmark_points ]
+		1.127E-03   and   1.336E+03 	[ momenta ]
+------------------------------------- Iteration: 2 -------------------------------------
+Log-likelihood = -1.193E+05 	 [ attachment = -1.193E+05 ; regularity = -1.225E+01 ]
+>> Estimation took: 02 seconds
+Deformetrica.__del__()

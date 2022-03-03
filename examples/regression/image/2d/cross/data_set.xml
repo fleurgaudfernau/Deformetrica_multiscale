@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<data-set>
+
+    <subject id="sub1">
+        <visit id="t-5">
+            <age>-5</age>
+            <filename object_id="img">data/cross_-5.png</filename>
+        </visit>
+
+        <visit id="t-3">
+            <age>-3</age>
+            <filename object_id="img">data/cross_-3.png</filename>
+        </visit>
+
+        <visit id="t-2">
+            <age>-2</age>
+            <filename object_id="img">data/cross_-2.png</filename>
+        </visit>
+
+        <visit id="t0">
+            <age>0</age>
+            <filename object_id="img">data/cross_0.png</filename>
+        </visit>
+
+        <visit id="t1">
+            <age>1</age>
+            <filename object_id="img">data/cross_1.png</filename>
+        </visit>
+
+        <visit id="t3">
+            <age>3</age>
+            <filename object_id="img">data/cross_3.png</filename>
+        </visit>
+
+    </subject>
+
+</data-set>

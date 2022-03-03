@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>GradientAscent</optimization-method-type>
+
+    <max-iterations>50</max-iterations>
+    <convergence-tolerance>1e-5</convergence-tolerance>
+    <initial-step-size>1e-6</initial-step-size>
+
+    <use-sobolev-gradient>On</use-sobolev-gradient>
+
+    <use-cuda>On</use-cuda>
+
+</optimization-parameters>

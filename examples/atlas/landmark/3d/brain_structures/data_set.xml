@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<data-set>
+    <subject id="subj1">
+        <visit id="experiment">
+            <filename object_id="amygdala">data/amygdala1.vtk</filename>
+            <filename object_id="hippo">data/hippo1.vtk</filename>
+        </visit>
+    </subject>
+    <subject id="subj2">
+        <visit id="experiment">
+            <filename object_id="amygdala">data/amygdala2.vtk</filename>
+            <filename object_id="hippo">data/hippo2.vtk</filename>
+        </visit>
+    </subject>
+    <subject id="subj3">
+        <visit id="experiment">
+            <filename object_id="amygdala">data/amygdala3.vtk</filename>
+            <filename object_id="hippo">data/hippo3.vtk</filename>
+        </visit>
+    </subject>
+    <subject id="subj4">
+        <visit id="experiment">
+            <filename object_id="amygdala">data/amygdala4.vtk</filename>
+            <filename object_id="hippo">data/hippo4.vtk</filename>
+        </visit>
+    </subject>
+
+</data-set>

@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<model>
+	    
+	<model-type>LongitudinalAtlas</model-type>
+	    
+	<dimension>2</dimension>
+	    
+	<template>
+		        
+		<object id="img">
+			            
+			<deformable-object-type>Image</deformable-object-type>
+			            
+			<filename>data/ForInitialization__Template_img__FromLongitudinalAtlas.png</filename>
+			            
+			<noise-std>0.1981</noise-std>
+			        
+		</object>
+		    
+	</template>
+	    
+	<deformation-parameters>
+		        
+		<concentration-of-timepoints>5</concentration-of-timepoints>
+		        
+		<kernel-type>torch</kernel-type>
+		        
+		<kernel-width>4</kernel-width>
+		        
+		<number-of-sources>1</number-of-sources>
+		    
+		<t0>12.3794</t0>
+	</deformation-parameters>
+	<initial-control-points>data/ForInitialization__ControlPoints__FromLongitudinalAtlas.txt</initial-control-points>
+	<initial-momenta>data/ForInitialization__Momenta__FromLongitudinalAtlas.txt</initial-momenta>
+	<initial-onset-ages>data/ForInitialization__OnsetAges__FromLongitudinalAtlas.txt</initial-onset-ages>
+	<initial-log-accelerations>data/ForInitialization__LogAccelerations__FromLongitudinalAtlas.txt</initial-log-accelerations>
+	<initial-modulation-matrix>data/ForInitialization__ModulationMatrix__FromLongitudinalAtlas.txt</initial-modulation-matrix>
+	<initial-sources>data/ForInitialization__Sources__FromLongitudinalAtlas.txt</initial-sources>
+	<initial-time-shift-std>0.5529</initial-time-shift-std>
+	<initial-log-acceleration-std>0.3957</initial-log-acceleration-std>
+</model>
+

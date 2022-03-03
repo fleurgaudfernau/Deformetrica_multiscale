@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>LongitudinalAtlas</model-type>
+    <dtype>float64</dtype>
+	<random-seed>42</random-seed>
+
+    <template>
+        <object id="RightHippocampus">
+            <deformable-object-type>SurfaceMesh</deformable-object-type>
+            <attachment-type>Current</attachment-type>
+            <kernel-type>keops</kernel-type>
+            <kernel-width>5</kernel-width>
+            <filename>data/ForInitialization__Template.vtk</filename>
+            <noise-std>5</noise-std>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-type>torch</kernel-type>
+        <kernel-width>10</kernel-width>
+        <concentration-of-timepoints>5</concentration-of-timepoints>
+        <number-of-timepoints>6</number-of-timepoints>
+    </deformation-parameters>
+
+</model>

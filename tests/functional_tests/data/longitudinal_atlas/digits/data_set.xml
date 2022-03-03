@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<data-set>
+
+    <subject id="s0">
+        <visit id="t11">
+            <age>11</age>
+            <filename object_id="img">data/digit_2_sample_11.png</filename>
+        </visit>
+
+        <visit id="t12">
+            <age>12</age>
+            <filename object_id="img">data/digit_2_sample_12.png</filename>
+        </visit>
+
+        <visit id="t13">
+            <age>13</age>
+            <filename object_id="img">data/digit_2_sample_13.png</filename>
+        </visit>
+    </subject>
+
+    <subject id="s1">
+        <visit id="t11">
+            <age>12</age>
+            <filename object_id="img">data/digit_2_sample_14.png</filename>
+        </visit>
+
+        <visit id="t13">
+            <age>14</age>
+            <filename object_id="img">data/digit_2_sample_9.png</filename>
+        </visit>
+    </subject>
+
+</data-set>

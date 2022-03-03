@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>GradientAscent</optimization-method-type>
+
+    <initial-step-size>10</initial-step-size>
+
+    <max-iterations>1</max-iterations>
+    <convergence-tolerance>1e-4</convergence-tolerance>
+
+    <!--<save-every-n-iters>1</save-every-n-iters>-->
+
+    <gpu-mode>none</gpu-mode>
+    <use-rk2>Off</use-rk2>
+
+</optimization-parameters>

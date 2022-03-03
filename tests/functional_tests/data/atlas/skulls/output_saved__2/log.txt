@@ -1,0 +1,29 @@
+Logger has been set to: DEBUG
+>> No initial CP spacing given: using diffeo kernel width of 40.0
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/skulls/output_saved__2/deformetrica-state.p.
+>> Using a Sobolev gradient for the template data with the ScipyLBFGS estimator memory length being larger than 1. Beware: that can be tricky.
+{'memory_length': 10, 'freeze_template': False, 'max_line_search_iterations': 10, 'optimized_log_likelihood': 'complete', 'optimization_method_type': 'scipylbfgs', 'max_iterations': 3, 'convergence_tolerance': 1e-06, 'print_every_n_iters': 1, 'save_every_n_iters': 100, 'use_cuda': False, 'state_file': '/home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/skulls/output_saved__2/deformetrica-state.p', 'load_state_file': False}
+>> Set of 16 control points defined.
+>> Momenta initialized to zero, for 5 subjects.
+dtype=float64
+Started estimator: ScipyOptimize
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -1.773E+05 	 [ attachment = -1.773E+05 ; regularity = 0.000E+00 ]
+>> Log-likelihood = -1.765E+05 	 [ attachment = -1.765E+05 ; regularity = -2.318E-02 ]
+>> Log-likelihood = -1.731E+05 	 [ attachment = -1.731E+05 ; regularity = -5.795E-01 ]
+>> Log-likelihood = -1.599E+05 	 [ attachment = -1.599E+05 ; regularity = -1.022E+01 ]
+>> Log-likelihood = -1.208E+05 	 [ attachment = -1.206E+05 ; regularity = -1.675E+02 ]
+
+------------------------------------- Iteration: 2 -------------------------------------
+>> Log-likelihood = -9.270E+04 	 [ attachment = -9.085E+04 ; regularity = -1.845E+03 ]
+
+------------------------------------- Iteration: 3 -------------------------------------
+>> Log-likelihood = -6.730E+04 	 [ attachment = -6.585E+04 ; regularity = -1.445E+03 ]
+>> STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT
+>> Estimation took: 00 seconds
+Deformetrica.__del__()

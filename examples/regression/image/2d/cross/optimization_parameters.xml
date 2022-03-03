@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+    <optimization-method-type>GradientAscent</optimization-method-type>
+    <max-iterations>50</max-iterations>
+    <save-every-n-iters>5</save-every-n-iters>
+    <freeze-template>On</freeze-template>
+    <initial-step-size>1e-9</initial-step-size>
+</optimization-parameters>

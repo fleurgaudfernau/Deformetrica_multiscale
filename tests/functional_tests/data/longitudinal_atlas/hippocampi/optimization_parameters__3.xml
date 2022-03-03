@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>McmcSaem</optimization-method-type>
+    <!--<optimization-method-type>GradientAscent</optimization-method-type>-->
+
+    <max-iterations>1</max-iterations>
+    <!--<save-every-n-iters>5</save-every-n-iters>-->
+
+    <!--<convergence-tolerance>1e-4</convergence-tolerance>-->
+    <!--<initial-step-size>1e-8</initial-step-size>-->
+    <max-line-search-iterations>1</max-line-search-iterations>
+    <sample-every-n-mcmc-iters>1</sample-every-n-mcmc-iters>
+
+    <initial-step-size>1e-2</initial-step-size>
+
+    <!--<use-sobolev-gradient>On</use-sobolev-gradient>-->
+
+    <!--<number-of-processes>5</number-of-processes>-->
+    <gpu-mode>none</gpu-mode>
+
+</optimization-parameters>

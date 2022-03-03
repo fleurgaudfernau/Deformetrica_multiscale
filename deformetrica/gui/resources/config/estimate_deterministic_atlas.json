@@ -1,0 +1,225 @@
+{
+  "function_name": "estimate_deterministic_atlas",
+  "parameter_groups": [
+    {
+      "label": "Main parameters",
+      "name": "deformation_parameters",
+      "parameters": [
+        {
+          "name": "deformation_kernel_width",
+          "tooltip": "Width of the Gaussian kernel used in the convolutions to generate deformations.",
+          "type": "float",
+          "default": 10.0
+        },
+        {
+          "name": "deformation_kernel_type",
+          "tooltip": "Use keops in priority. Torch can be faster for small objects. Keops is not available on Macintosh distributions for now.",
+          "type": "selector",
+          "values": [
+            "torch",
+            "keops"
+          ],
+          "default": "torch"
+        },
+        {
+          "label": "Output Directory",
+          "name": "output_dir",
+          "tooltip": "Relative path to the directory where the results will be saved.",
+          "type": "directory",
+          "default": "./output"
+        },
+        {
+          "name": "freeze_template",
+          "tooltip": "Activate to freeze the template, that will therefore remain equal to the provided initial one.",
+          "type": "toggle",
+          "default": false
+        },
+        {
+          "name": "freeze_control_points",
+          "tooltip": "Activate to freeze the control points. This is often a good choice.",
+          "type": "toggle",
+          "default": true
+        }
+      ]
+    },
+    {
+      "label": "Dataset",
+      "name": "template",
+      "multiple": true,
+      "parameters": [
+        {
+          "label": "Template File",
+          "name": "filename",
+          "tooltip": "Relative path to the initial template object.",
+          "type": "file"
+        },
+        {
+          "label": "Subject Files",
+          "name": "filenames",
+          "tooltip": "Relative paths to the input data objects.",
+          "type": "files"
+        },
+        {
+          "name": "deformable_object_type",
+          "tooltip": "Type of the object.",
+          "type": "selector",
+          "values": [
+            "SurfaceMesh",
+            "PolyLine",
+            "PointCloud",
+            "Landmark",
+            "Image"
+          ],
+          "default": "SurfaceMesh"
+        },
+        {
+          "name": "attachment_type",
+          "type": "selector",
+          "tooltip": "Type of distance that will be used to evaluate the similarity between objects. Use Landmark is there is a point correspondence between input meshes. Is you use Current, the orientation of normals must be consistent between the initial template and all input meshes. This field is not read in the PointCloud, Landmark and Image object type cases.",
+          "values": [
+            "Varifold",
+            "Current",
+            "Landmark"
+          ],
+          "default": "Varifold"
+        },
+        {
+          "name": "kernel_width",
+          "tooltip": "Width of the Gaussian kernel used in the convolutions to evaluate the similarity between objects. This field is not read in the Landmark and Image object type cases.",
+          "type": "float",
+          "default": 10.0
+        },
+        {
+          "name": "kernel_type",
+          "tooltip": "Use keops in priority. Keops is not available on Macintosh distributions for now. This field is not read in the Landmark and Image object type cases.",
+          "type": "selector",
+          "values": [
+            "torch",
+            "keops"
+          ],
+          "default": "torch"
+        },
+        {
+          "name": "noise_std",
+          "tooltip": "Controls the tradeoff between data attachment and regularization. A lower noise-std gives more importance to the data attachment cost for this object, at the risk of over-fitting.",
+          "type": "float",
+          "default": 1.0
+        },
+        {
+          "name": "dimension",
+          "tooltip": "Dimension of the ambient space in which the input data object live.",
+          "type": "selector",
+          "values": [
+            2,
+            3,
+            "Auto"
+          ],
+          "default": "Auto"
+        },
+        {
+          "name": "downsampling_factor",
+          "tooltip": "This field is only read in the Image object type case. A good rule of thumb is to choose around half of the deformation kernel width for faster computation with preserved precision.",
+          "type": "selector",
+          "values": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "default": 2
+        }
+      ]
+    },
+    {
+      "label": "Advanced parameters",
+      "name": "optimization_parameters",
+      "optional": true,
+      "parameters": [
+        {
+          "name": "optimization_method_type",
+          "tooltip": "Optimization algorithm. GradientAscent is more robust, ScipyLBFGS is faster.",
+          "type": "selector",
+          "values": [
+            "GradientAscent",
+            "ScipyLBFGS"
+          ],
+          "default": "GradientAscent"
+        },
+        {
+          "name": "max_iterations",
+          "tooltip": "Maximum number of iterations of the algorithm.",
+          "type": "int",
+          "default": 100
+        },
+        {
+          "name": "initial_step_size",
+          "tooltip": "This field is read only in the GradientAscent optimization method case. Decreasing the initial step size might avoid falling into weird local optima, at the cost of a slower convergence.",
+          "type": "selector",
+          "values": [
+            1.0,
+            0.5,
+            0.1,
+            0.05,
+            0.01,
+            0.001,
+            0.0001
+          ],
+          "default": 0.5
+        },
+        {
+          "name": "convergence_tolerance",
+          "tooltip": "Convergence tolerance.",
+          "type": "selector",
+          "values": [
+            1e-2,
+            1e-3,
+            1e-4,
+            1e-5,
+            1e-6
+          ],
+          "default": 1e-4
+        },
+        {
+          "name": "gpu_mode",
+          "tooltip": "Select the desired gpu mode to use. Beware of gpu-memory overflows in the case of large input data objects.",
+          "type": "selector",
+          "values": [
+            "auto",
+            "full",
+            "none",
+            "kernel"
+          ],
+          "default": "auto"
+        },
+        {
+          "name": "save_every_n_iters",
+          "tooltip": "Pace at which intermediate results are saved.",
+          "type": "selector",
+          "values": [
+            1,
+            5,
+            10,
+            50,
+            100,
+            200,
+            500
+          ],
+          "default": 10
+        },
+        {
+          "name": "use_rk2_for_shoot",
+          "tooltip": "Activate for a second-order integration scheme in the shoot operation.",
+          "type": "toggle",
+          "default": false
+        },
+        {
+          "name": "use_rk2_for_flow",
+          "tooltip": "Activate for a second-order integration scheme in the flow operation.",
+          "type": "toggle",
+          "default": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+    <optimization-method-type>GradientAscent</optimization-method-type>
+<!--    <max-iterations>300</max-iterations>-->
+<!--    <convergence-tolerance>1e-5</convergence-tolerance>-->
+<!--    <use-sobolev-gradient>On</use-sobolev-gradient>-->
+<!--    <freeze-template>Off</freeze-template>-->
+</optimization-parameters>

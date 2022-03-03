@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<model>
+	    
+	<model-type>LongitudinalAtlas</model-type>
+	<dimension>2</dimension>
+	<dtype>float64</dtype>
+	    
+	<template>
+		<object id="starman">
+			<deformable-object-type>PolyLine</deformable-object-type>
+			<attachment-type>Landmark</attachment-type>
+			<filename>data/ForInitialization__Template_starman.vtk</filename>
+			<noise-std>1.0000</noise-std>
+		</object>
+	</template>
+	    
+	<deformation-parameters>
+		<kernel-type>torch</kernel-type>
+		<kernel-width>1</kernel-width>
+		<number-of-sources>4</number-of-sources>
+	</deformation-parameters>
+	                        
+	<initial-control-points>data/ForInitialization__ControlPoints.txt</initial-control-points>
+	<initial-momenta>data/ForInitialization__Momenta.txt</initial-momenta>
+	<initial-acceleration-std>0.0281</initial-acceleration-std>
+	<initial-modulation-matrix>data/ForInitialization__ModulationMatrix.txt</initial-modulation-matrix>
+	<initial-time-shift-std>0.4709</initial-time-shift-std>
+
+	<!--<initial-accelerations>data/ForInitialization__Accelerations.txt</initial-accelerations>-->
+	<!--<initial-onset-ages>data/ForInitialization__OnsetAges.txt</initial-onset-ages>-->
+	<!--<initial-sources>data/ForInitialization__Sources.txt</initial-sources>-->
+</model>
+

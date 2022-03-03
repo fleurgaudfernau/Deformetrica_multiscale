@@ -1,0 +1,21 @@
+Logger has been set to: DEBUG
+>> No initial CP spacing given: using diffeo kernel width of 10.0
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/brain_structures/output_saved__5/deformetrica-state.p.
+>> Objects noise dimension:
+		[ amygdala ]	48
+		[ hippo ]	48
+>> Set of 30 control points defined.
+>> Momenta initialized to zero, for 4 subjects.
+dtype=float64
+Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = -1.352E+03 	 [ attachment = -1.920E+02 ; regularity = -1.160E+03 ]
+Step size and gradient norm: 
+		3.680E-02   and   2.717E+02 	[ landmark_points ]
+		2.210E-01   and   4.526E+01 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = -1.274E+03 	 [ attachment = -1.909E+02 ; regularity = -1.083E+03 ]
+>> Estimation took: 00 seconds
+Deformetrica.__del__()

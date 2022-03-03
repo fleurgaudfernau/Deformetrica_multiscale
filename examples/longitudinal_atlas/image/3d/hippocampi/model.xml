@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>LongitudinalAtlas</model-type>
+    <dimension>3</dimension>
+
+    <template>
+        <object id="right_hippocampus">
+            <deformable-object-type>Image</deformable-object-type>
+            <filename>data/ForInitialization__Template__FromUser__s0021_7260_0.nii</filename>
+            <noise-std>1</noise-std>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-type>keops</kernel-type>
+        <kernel-width>10</kernel-width>
+        <concentration-of-timepoints>5</concentration-of-timepoints>
+        <number-of-timepoints>6</number-of-timepoints>
+        <number-of-sources>2</number-of-sources>
+    </deformation-parameters>
+
+</model>

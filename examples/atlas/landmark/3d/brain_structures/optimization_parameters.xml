@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+    <optimization-method-type>GradientAscent</optimization-method-type>
+    <initial-step-size>0.01</initial-step-size>
+    <max-iterations>10</max-iterations>
+    <convergence-tolerance>1e-4</convergence-tolerance>
+    <freeze-template>Off</freeze-template>
+    <freeze-control-points>On</freeze-control-points>
+    <number-of-processes>4</number-of-processes>
+</optimization-parameters>

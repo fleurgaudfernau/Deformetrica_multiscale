@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+    <optimization-method-type>ScipyLBFGS</optimization-method-type>
+    <max-iterations>100</max-iterations>
+    <save-every-n-iters>50</save-every-n-iters>
+    <initial-step-size>1e-5</initial-step-size>
+    <convergence-tolerance>1e-3</convergence-tolerance>
+</optimization-parameters>

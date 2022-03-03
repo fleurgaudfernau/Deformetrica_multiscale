@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<data-set>
+	<subject id="sub-F001">
+		<visit id="ses-000">
+			<age>0</age>
+			<filename object_id="FaceLandmarks">data/sub-F001_ses-000.vtk</filename>
+		</visit>
+		<visit id="ses-005">
+			<age>5</age>
+			<filename object_id="FaceLandmarks">data/sub-F001_ses-005.vtk</filename>
+		</visit>
+		<visit id="ses-010">
+			<age>10</age>
+			<filename object_id="FaceLandmarks">data/sub-F001_ses-010.vtk</filename>
+		</visit>
+		<visit id="ses-015">
+			<age>15</age>
+			<filename object_id="FaceLandmarks">data/sub-F001_ses-015.vtk</filename>
+		</visit>
+		<visit id="ses-020">
+			<age>20</age>
+			<filename object_id="FaceLandmarks">data/sub-F001_ses-020.vtk</filename>
+		</visit>
+		<visit id="ses-025">
+			<age>25</age>
+			<filename object_id="FaceLandmarks">data/sub-F001_ses-025.vtk</filename>
+		</visit>
+		<visit id="ses-030">
+			<age>30</age>
+			<filename object_id="FaceLandmarks">data/sub-F001_ses-030.vtk</filename>
+		</visit>
+		<visit id="ses-035">
+			<age>35</age>
+			<filename object_id="FaceLandmarks">data/sub-F001_ses-035.vtk</filename>
+		</visit>
+	</subject>
+</data-set>
+

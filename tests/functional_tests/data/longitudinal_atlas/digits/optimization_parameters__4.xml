@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>ScipyLBFGS</optimization-method-type>
+
+    <max-iterations>5</max-iterations>
+    <number-of-processes>1</number-of-processes>
+
+</optimization-parameters>

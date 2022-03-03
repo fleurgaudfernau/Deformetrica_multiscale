@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+    <optimization-method-type>GradientAscent</optimization-method-type>
+    <max-iterations>1000</max-iterations>
+    <save-every-n-iters>10</save-every-n-iters>
+    <initial-step-size>0.01</initial-step-size>
+	<convergence-tolerance>0.0001</convergence-tolerance>
+	<freeze-template>Off</freeze-template>
+</optimization-parameters>

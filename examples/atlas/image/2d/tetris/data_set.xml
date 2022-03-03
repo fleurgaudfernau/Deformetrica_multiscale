@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<data-set>
+    <subject id="sub_1">
+        <visit id="experiment">
+            <filename object_id="img">data/image2.png</filename>
+        </visit>
+    </subject>
+    <subject id="sub_2">
+        <visit id="experiment">
+            <filename object_id="img">data/image3.png</filename>
+        </visit>
+    </subject>
+    <subject id="sub_3">
+        <visit id="experiment">
+            <filename object_id="img">data/image4.png</filename>
+        </visit>
+    </subject>
+</data-set>

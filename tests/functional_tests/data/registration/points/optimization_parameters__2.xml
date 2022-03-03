@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+    <optimization-method-type>GradientAscent</optimization-method-type>
+    <gpu-mode>none</gpu-mode>
+    <max-iterations>40</max-iterations>
+    <initial-step-size>1e-1</initial-step-size>
+    <freeze-template>On</freeze-template>
+    <number-of-processes>2</number-of-processes>
+
+</optimization-parameters>

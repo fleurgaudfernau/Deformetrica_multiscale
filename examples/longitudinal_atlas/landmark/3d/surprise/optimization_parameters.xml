@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <!--<optimization-method-type>ScipyPowell</optimization-method-type>-->
+    <!-- <optimization-method-type>ScipyLBFGS</optimization-method-type>-->
+    <!--<optimization-method-type>GradientAscent</optimization-method-type>-->
+    <optimization-method-type>McmcSaem</optimization-method-type>
+
+    <max-iterations>3</max-iterations>
+    <save-every-n-iters>1</save-every-n-iters>
+
+    <convergence-tolerance>1e-5</convergence-tolerance>
+    <initial-step-size>1e-6</initial-step-size>
+
+    <use-sobolev-gradient>On</use-sobolev-gradient>
+
+    <sample-every-n-mcmc-iters>5</sample-every-n-mcmc-iters>
+
+    <!--<onset-age-proposal-std>1</onset-age-proposal-std>-->
+    <!--<log-acceleration-proposal-std>0.1</log-acceleration-proposal-std>-->
+
+    <number-of-processes>4</number-of-processes>
+    <!-- <use-cuda>On</use-cuda> -->
+
+</optimization-parameters>

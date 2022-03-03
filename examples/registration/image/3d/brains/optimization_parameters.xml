@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>ScipyLBFGS</optimization-method-type>
+
+    <max-iterations>50</max-iterations>
+    <save-every-n-iters>10</save-every-n-iters>
+    <print-every-n-iters>1</print-every-n-iters>
+
+    <convergence-tolerance>1e-4</convergence-tolerance>
+    <initial-step-size>1e-6</initial-step-size>
+
+    <use-cuda>On</use-cuda>
+    <downsampling-factor>2</downsampling-factor>
+
+    <freeze-template>On</freeze-template>
+
+</optimization-parameters>

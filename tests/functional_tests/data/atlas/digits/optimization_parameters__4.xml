@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>GradientAscent</optimization-method-type>
+
+    <max-iterations>3</max-iterations>
+
+    <scale-initial-step-size>Off</scale-initial-step-size>
+
+    <downsampling-factor>2</downsampling-factor>
+    
+    <convergence-tolerance>1e-6</convergence-tolerance>
+
+    <gpu-mode>full</gpu-mode>
+    <number-of-processes>5</number-of-processes>
+
+</optimization-parameters>

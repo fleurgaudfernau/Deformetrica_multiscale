@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<model>
+    <model-type>Registration</model-type>
+    <dimension>3</dimension>
+
+    <template>
+
+        <object id="bundle">
+            <deformable-object-type>PolyLine</deformable-object-type>
+            <attachment-type>Varifold</attachment-type>
+            <noise-std>1</noise-std>
+            <kernel-width>11</kernel-width>
+            <kernel-type>keops</kernel-type>
+            <filename>data/bundle_prototype.vtk</filename>
+        </object>
+
+        <object id="putamen">
+            <deformable-object-type>SurfaceMesh</deformable-object-type>
+            <attachment-type>Varifold</attachment-type>
+            <noise-std>0.1</noise-std>
+            <kernel-width>11</kernel-width>
+            <kernel-type>keops</kernel-type>
+            <filename>data/putamen_prototype.vtk</filename>
+        </object>
+
+    </template>
+
+    <deformation-parameters>
+        <kernel-width>15</kernel-width>
+        <kernel-type>keops</kernel-type>
+        <number-of-timepoints>10</number-of-timepoints>
+    </deformation-parameters>
+
+</model>

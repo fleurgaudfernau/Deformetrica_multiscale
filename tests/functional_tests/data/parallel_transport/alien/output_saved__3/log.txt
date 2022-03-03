@@ -1,0 +1,10 @@
+No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+Logger has been set to: DEBUG
+OMP_NUM_THREADS was not found in environment variables. An automatic value will be set.
+OMP_NUM_THREADS will be set to 4
+nofile (soft): 1024, nofile (hard): 4096
+dtype=float64
+instantiating kernel torch with kernel_width 0.005 and gpu_mode GpuMode.FULL. addr: 0x7f115ded6630
+initial-control-points-to-transport was not specified, I am assuming they are the same as initial-control-points
+time taken to compute parallel_transport: 0.2700759004801512
+Deformetrica.__del__()

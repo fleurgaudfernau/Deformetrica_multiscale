@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>McmcSaem</optimization-method-type>
+
+    <max-iterations>1</max-iterations>
+    <save-every-n-iters>5</save-every-n-iters>
+    <print-every-n-iters>1</print-every-n-iters>
+
+    <convergence-tolerance>1e-4</convergence-tolerance>
+    <initial-step-size>1e-8</initial-step-size>
+    <max-line-search-iterations>20</max-line-search-iterations>
+    <sample-every-n-mcmc-iterations>1</sample-every-n-mcmc-iterations>
+
+    <use-sobolev-gradient>On</use-sobolev-gradient>
+
+    <number-of-processes>5</number-of-processes>
+    <use-cuda>On</use-cuda>
+
+</optimization-parameters>

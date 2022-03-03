@@ -1,0 +1,99 @@
+Logger has been set to: DEBUG
+>> Dense mode activated. No distinction will be made between template and control points.
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/registration/points/output_saved__2/deformetrica-state.p.
+{'initial_step_size': 0.1, 'scale_initial_step_size': True, 'line_search_shrink': 0.5, 'line_search_expand': 1.5, 'max_line_search_iterations': 10, 'optimized_log_likelihood': 'complete', 'optimization_method_type': 'gradientascent', 'max_iterations': 40, 'convergence_tolerance': 0.0001, 'print_every_n_iters': 1, 'save_every_n_iters': 100, 'use_cuda': False, 'state_file': '/home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/registration/points/output_saved__2/deformetrica-state.p', 'load_state_file': False, 'memory_length': 10}
+>> Momenta initialized to zero, for 1 subjects.
+Starting multiprocess using 2 processes
+Multiprocess pool started using start method "file_descriptor" in: 0.018118243664503098 seconds
+You are trying to run more processes than there are available GPUs, it is advised to run `nvidia-cuda-mps-control` to leverage concurrent cuda executions. If run in background mode, don't forget to stop the daemon when done.
+dtype=float64
+Started estimator: GradientAscent
+time taken for deformations : 1.5876901466399431
+------------------------------------- Iteration: 0 -------------------------------------
+Log-likelihood = -2.000E+04 	 [ attachment = -2.000E+04 ; regularity = 0.000E+00 ]
+Step size and gradient norm: 
+		3.535E-05   and   2.828E+03 	[ momenta ]
+time taken for deformations : 0.0072343721985816956
+------------------------------------- Iteration: 1 -------------------------------------
+Log-likelihood = -1.972E+04 	 [ attachment = -1.972E+04 ; regularity = -1.000E-02 ]
+time taken for deformations : 0.0109016764909029
+Step size and gradient norm: 
+		5.303E-05   and   2.808E+03 	[ momenta ]
+time taken for deformations : 0.0035897772759199142
+------------------------------------- Iteration: 2 -------------------------------------
+Log-likelihood = -1.930E+04 	 [ attachment = -1.930E+04 ; regularity = -6.197E-02 ]
+time taken for deformations : 0.014640351757407188
+Step size and gradient norm: 
+		7.955E-05   and   2.778E+03 	[ momenta ]
+time taken for deformations : 0.00725322961807251
+------------------------------------- Iteration: 3 -------------------------------------
+Log-likelihood = -1.869E+04 	 [ attachment = -1.869E+04 ; regularity = -2.208E-01 ]
+time taken for deformations : 0.01475328579545021
+Step size and gradient norm: 
+		1.193E-04   and   2.734E+03 	[ momenta ]
+time taken for deformations : 0.0030485764145851135
+------------------------------------- Iteration: 4 -------------------------------------
+Log-likelihood = -1.781E+04 	 [ attachment = -1.781E+04 ; regularity = -6.338E-01 ]
+time taken for deformations : 0.011224763467907906
+Step size and gradient norm: 
+		1.790E-04   and   2.668E+03 	[ momenta ]
+time taken for deformations : 0.006912892684340477
+------------------------------------- Iteration: 5 -------------------------------------
+Log-likelihood = -1.656E+04 	 [ attachment = -1.656E+04 ; regularity = -1.622E+00 ]
+time taken for deformations : 0.011963609606027603
+Step size and gradient norm: 
+		2.685E-04   and   2.571E+03 	[ momenta ]
+time taken for deformations : 0.007015565410256386
+------------------------------------- Iteration: 6 -------------------------------------
+Log-likelihood = -1.483E+04 	 [ attachment = -1.483E+04 ; regularity = -3.857E+00 ]
+time taken for deformations : 0.015984585508704185
+Step size and gradient norm: 
+		4.027E-04   and   2.432E+03 	[ momenta ]
+time taken for deformations : 0.005813807249069214
+------------------------------------- Iteration: 7 -------------------------------------
+Log-likelihood = -1.255E+04 	 [ attachment = -1.254E+04 ; regularity = -8.662E+00 ]
+time taken for deformations : 0.01630704663693905
+Step size and gradient norm: 
+		6.041E-04   and   2.234E+03 	[ momenta ]
+time taken for deformations : 0.003313755616545677
+------------------------------------- Iteration: 8 -------------------------------------
+Log-likelihood = -9.720E+03 	 [ attachment = -9.701E+03 ; regularity = -1.843E+01 ]
+time taken for deformations : 0.010734058916568756
+Step size and gradient norm: 
+		9.061E-04   and   1.961E+03 	[ momenta ]
+time taken for deformations : 0.003071410581469536
+------------------------------------- Iteration: 9 -------------------------------------
+Log-likelihood = -6.553E+03 	 [ attachment = -6.516E+03 ; regularity = -3.684E+01 ]
+time taken for deformations : 0.01408071257174015
+Step size and gradient norm: 
+		1.359E-03   and   1.602E+03 	[ momenta ]
+time taken for deformations : 0.007065989077091217
+------------------------------------- Iteration: 10 -------------------------------------
+Log-likelihood = -3.542E+03 	 [ attachment = -3.474E+03 ; regularity = -6.802E+01 ]
+time taken for deformations : 0.010129651054739952
+Step size and gradient norm: 
+		2.039E-03   and   1.162E+03 	[ momenta ]
+time taken for deformations : 0.0030400529503822327
+------------------------------------- Iteration: 11 -------------------------------------
+Log-likelihood = -1.355E+03 	 [ attachment = -1.242E+03 ; regularity = -1.127E+02 ]
+time taken for deformations : 0.009892189875245094
+Step size and gradient norm: 
+		3.058E-03   and   6.837E+02 	[ momenta ]
+time taken for deformations : 0.0032382644712924957
+------------------------------------- Iteration: 12 -------------------------------------
+Log-likelihood = -3.671E+02 	 [ attachment = -2.056E+02 ; regularity = -1.615E+02 ]
+time taken for deformations : 0.01062796451151371
+Step size and gradient norm: 
+		4.587E-03   and   2.613E+02 	[ momenta ]
+time taken for deformations : 0.0033958274871110916
+------------------------------------- Iteration: 13 -------------------------------------
+Log-likelihood = -1.989E+02 	 [ attachment = -5.519E+00 ; regularity = -1.934E+02 ]
+time taken for deformations : 0.01159401424229145
+Step size and gradient norm: 
+		6.881E-03   and   1.917E+01 	[ momenta ]
+time taken for deformations : 0.007501445710659027
+Tolerance threshold met. Stopping the optimization process.
+>> Estimation took: 01 seconds
+Deformetrica.__del__()

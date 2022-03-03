@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>Registration</model-type>
+    <dimension>2</dimension>
+
+    <template>
+        <object id="starfish">
+            <deformable-object-type>Polyline</deformable-object-type>
+            <attachment-type>Current</attachment-type>
+            <noise-std>0.1</noise-std>
+            <kernel-width>50.0</kernel-width>
+            <kernel-type>torch</kernel-type>
+            <filename>data/starfish_reference.vtk</filename>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-width>30</kernel-width>
+        <kernel-type>torch</kernel-type>
+    </deformation-parameters>
+
+</model>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<model>
+    <model-type>Shooting</model-type>
+    <dimension>3</dimension>
+    <template>
+        <object id="amygdala">
+            <deformable-object-type>SurfaceMesh</deformable-object-type>
+            <filename>data/amyg_prototype.vtk</filename>
+        </object>
+        <object id="hippo">
+            <deformable-object-type>SurfaceMesh</deformable-object-type>
+            <filename>data/hippo_prototype.vtk</filename>
+        </object>
+    </template>
+
+    <initial-control-points>data/ControlPoints.txt</initial-control-points>
+    <initial-momenta>data/Momenta.txt</initial-momenta>
+
+    <deformation-parameters>
+        <kernel-width>10.0</kernel-width>
+        <kernel-type>torch</kernel-type>
+    </deformation-parameters>
+</model>

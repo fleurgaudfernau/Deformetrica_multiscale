@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+    <optimization-method-type>ScipyLBFGS</optimization-method-type>
+    <max-iterations>100</max-iterations>
+    <save-every-n-iters>5</save-every-n-iters>
+    <initial-step-size>1e-3</initial-step-size>
+    <freeze-template>Off</freeze-template>
+    <freeze-noise-variance>On</freeze-noise-variance>
+    <freeze-modulation-matrix>Off</freeze-modulation-matrix>
+</optimization-parameters>

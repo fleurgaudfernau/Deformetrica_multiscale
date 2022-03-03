@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>Registration</model-type>
+    <dimension>2</dimension>
+
+    <template>
+        <object id="digit">
+            <deformable-object-type>Image</deformable-object-type>
+            <noise-std>0.1</noise-std>
+            <filename>data/digit_2_sample_10.png</filename>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-width>3</kernel-width>
+        <kernel-type>torch</kernel-type>
+        <number-of-timepoints>20</number-of-timepoints>
+    </deformation-parameters>
+
+</model>

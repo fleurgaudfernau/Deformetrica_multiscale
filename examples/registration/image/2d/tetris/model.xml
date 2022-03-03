@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>Registration</model-type>
+    <dimension>2</dimension>
+
+    <template>
+        <object id="img">
+            <deformable-object-type>Image</deformable-object-type>
+            <noise-std>0.1</noise-std>
+            <kernel-type>torch</kernel-type>
+            <kernel-width>10</kernel-width>
+            <filename>data/image1.png</filename>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-width>20</kernel-width>
+        <kernel-type>torch</kernel-type>
+    </deformation-parameters>
+
+</model>

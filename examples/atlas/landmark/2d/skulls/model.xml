@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<model>
+
+     <model-type>DeterministicAtlas</model-type>
+     <!--<model-type>BayesianAtlas</model-type>-->
+<!--    <dimension>2</dimension>-->
+
+    <template>
+        <object id="skull">
+            <deformable-object-type>Polyline</deformable-object-type>
+            <attachment-type>varifold</attachment-type>
+            <kernel-width>20</kernel-width>
+            <kernel-type>keops</kernel-type>
+            <noise-std>1</noise-std>
+            <filename>data/template.vtk</filename>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-width>20</kernel-width>
+        <kernel-type>keops</kernel-type>
+    </deformation-parameters>
+
+</model>

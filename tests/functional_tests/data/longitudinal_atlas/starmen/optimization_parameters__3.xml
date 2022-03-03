@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <!--<optimization-method-type>McmcSaem</optimization-method-type>-->
+    <optimization-method-type>ScipyLBFGS</optimization-method-type>
+    <!--<optimization-method-type>GradientAscent</optimization-method-type>-->
+
+    <max-iterations>1</max-iterations>
+    <max-line-search-iterations>5</max-line-search-iterations>
+    <sample-every-n-mcmc-iters>10</sample-every-n-mcmc-iters>
+
+    <initial-step-size>1e-2</initial-step-size>
+
+    <!--<onset-age-proposal-std>0.2</onset-age-proposal-std>-->
+    <!--<log-acceleration-proposal-std>0.1</log-acceleration-proposal-std>-->
+    <!--<sources-proposal-std>0.02</sources-proposal-std>-->
+
+    <!--<gpu-mode>full</gpu-mode>-->
+    <number-of-processes>2</number-of-processes>
+
+</optimization-parameters>

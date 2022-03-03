@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+    <optimization-method-type>GradientAscent</optimization-method-type>
+     <max-iterations>100</max-iterations>
+    <save-every-n-iters>10</save-every-n-iters>
+    <smoothing-kernel-width>20</smoothing-kernel-width>
+</optimization-parameters>

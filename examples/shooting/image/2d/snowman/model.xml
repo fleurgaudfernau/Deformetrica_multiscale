@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>Shooting</model-type>
+    <dimension>2</dimension>
+
+    <initial-control-points>data/control_points.txt</initial-control-points>
+    <initial-momenta>data/momenta.txt</initial-momenta>
+
+    <template>
+        <object id="img">
+            <deformable-object-type>Image</deformable-object-type>
+            <filename>data/I1.png</filename>
+        </object>
+
+    </template>
+
+    <deformation-parameters>
+        <kernel-width>35.0</kernel-width>
+        <kernel-type>torch</kernel-type>
+    </deformation-parameters>
+</model>

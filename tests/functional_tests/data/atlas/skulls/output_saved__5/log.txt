@@ -1,0 +1,31 @@
+Logger has been set to: DEBUG
+>> It is not possible at the moment to estimate a "BayesianAtlas" model with multithreading. Overriding the "number-of-processes" option, now set to 1.
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/skulls/output_saved__5/deformetrica-state.p.
+>> Using a Sobolev gradient for the template data with the ScipyLBFGS estimator memory length being larger than 1. Beware: that can be tricky.
+>> Objects noise dimension:
+		[ skull ]	128
+>> Reading 16 initial control points from file /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/skulls/data/Atlas_ControlPoints.txt.
+>> Reading initial momenta from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/skulls/data/ForInitialization_Momenta_AlmostPerfect.txt.
+dtype=float64
+Started estimator: ScipyOptimize
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -1.381E+04 	 [ attachment = -3.344E+03 ; regularity = -1.047E+04 ]
+>> Log-likelihood = -1.378E+04 	 [ attachment = -3.343E+03 ; regularity = -1.044E+04 ]
+>> Log-likelihood = -1.368E+04 	 [ attachment = -3.337E+03 ; regularity = -1.034E+04 ]
+>> Log-likelihood = -1.324E+04 	 [ attachment = -3.313E+03 ; regularity = -9.926E+03 ]
+>> Log-likelihood = -1.177E+04 	 [ attachment = -3.206E+03 ; regularity = -8.563E+03 ]
+
+------------------------------------- Iteration: 2 -------------------------------------
+>> Log-likelihood = -1.195E+04 	 [ attachment = -3.221E+03 ; regularity = -8.726E+03 ]
+>> Log-likelihood = -1.090E+04 	 [ attachment = -3.118E+03 ; regularity = -7.781E+03 ]
+
+------------------------------------- Iteration: 3 -------------------------------------
+>> Log-likelihood = -9.938E+03 	 [ attachment = -2.991E+03 ; regularity = -6.947E+03 ]
+>> STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT
+>> Estimation took: 00 seconds
+Deformetrica.__del__()

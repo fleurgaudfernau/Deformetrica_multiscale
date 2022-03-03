@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>ScipyLBFGS</optimization-method-type>
+
+    <max-iterations>2</max-iterations>
+    <freeze-template>On</freeze-template>
+    <freeze-control-points>Off</freeze-control-points>
+    <!--<initial-step-size>1e-9</initial-step-size>-->
+
+    <gpu-mode>none</gpu-mode>
+
+</optimization-parameters>

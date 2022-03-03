@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<model>
+	    
+	<model-type>LongitudinalAtlas</model-type>
+	    
+	<dimension>3</dimension>
+	    
+	<template>
+		        
+		<object id="right_hippocampus">
+			            
+			<deformable-object-type>Image</deformable-object-type>
+			            
+			<filename>data/ForInitialization__Template_right_hippocampus__FromLongitudinalAtlas.nii</filename>
+			            
+			<noise-std>0.0997</noise-std>
+			        
+		</object>
+		    
+	</template>
+	    
+	<deformation-parameters>
+		        
+		<kernel-type>keops</kernel-type>
+		        
+		<kernel-width>10</kernel-width>
+		        
+		<concentration-of-timepoints>5</concentration-of-timepoints>
+		        
+		<number-of-timepoints>6</number-of-timepoints>
+		        
+		<number-of-sources>2</number-of-sources>
+		    
+		<t0>72.1944</t0>
+	</deformation-parameters>
+	<initial-control-points>data/ForInitialization__ControlPoints__FromLongitudinalAtlas.txt</initial-control-points>
+	<initial-momenta>data/ForInitialization__Momenta__FromLongitudinalAtlas.txt</initial-momenta>
+	<initial-onset-ages>data/ForInitialization__OnsetAges__FromLongitudinalAtlas.txt</initial-onset-ages>
+	<initial-log-accelerations>data/ForInitialization__LogAccelerations__FromLongitudinalAtlas.txt</initial-log-accelerations>
+	<initial-modulation-matrix>data/ForInitialization__ModulationMatrix__FromLongitudinalAtlas.txt</initial-modulation-matrix>
+	<initial-sources>data/ForInitialization__Sources__FromLongitudinalAtlas.txt</initial-sources>
+	<initial-time-shift-std>1.1749</initial-time-shift-std>
+	<initial-log-acceleration-std>0.2863</initial-log-acceleration-std>
+</model>
+

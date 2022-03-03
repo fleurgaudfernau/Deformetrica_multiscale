@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<optimization-parameters>
+
+    <optimization-method-type>ScipyLBFGS</optimization-method-type>
+
+    <max-iterations>2</max-iterations>
+
+    <downsampling-factor>2</downsampling-factor>
+    <gpu-mode>full</gpu-mode>
+
+</optimization-parameters>

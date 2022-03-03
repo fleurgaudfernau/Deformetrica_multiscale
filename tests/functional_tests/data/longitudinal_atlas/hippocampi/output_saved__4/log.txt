@@ -1,0 +1,268 @@
+Logger has been set to: DEBUG
+Logger has been set to: INFO
+>> No initial CP spacing given: using diffeo kernel width of 10.0
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+>> Initial t0 set to the mean visit age: 74.70
+>> Initial time-shift std set to the empirical std of the visit ages: 6.93
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/deformetrica-state.p.
+>> No initial modulation matrix given, neither a number of sources. The latter will be ARBITRARILY defaulted to 4.
+[ estimate an atlas from baseline data ]
+
+>> No initial CP spacing given: using diffeo kernel width of 10.0
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/1_atlas_on_baseline_data/deformetrica-state.p.
+>> Objects noise dimension:
+		[ RightHippocampus ]	1152
+>> Set of 48 control points defined.
+>> Momenta initialized to zero, for 4 subjects.
+>> Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+>> Log-likelihood = -1.113E+04 	 [ attachment = -2.304E+03 ; regularity = -8.826E+03 ]
+>> Step size and gradient norm: 
+		2.382E-06   and   4.199E+03 	[ landmark_points ]
+		2.398E-05   and   4.171E+02 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -1.113E+04 	 [ attachment = -2.304E+03 ; regularity = -8.821E+03 ]
+>> Estimation took: 00 seconds
+
+[ compute individual geodesic regressions ]
+
+[ geodesic regression for subject sub-ADNI002S0729 ]
+
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+>> Initial t0 set by the user to 65.10 ; note that the mean visit age is 68.61
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/2_individual_geodesic_regressions/GeodesicRegression__subject_sub-ADNI002S0729/deformetrica-state.p.
+>> Reading 48 initial control points from file /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/2_individual_geodesic_regressions/tmp/regression_control_points__sub-ADNI002S0729.txt.
+>> Momenta initialized to zero.
+>> Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+>> Log-likelihood = -6.289E+03 	 [ attachment = -6.289E+03 ; regularity = -0.000E+00 ]
+>> Step size and gradient norm: 
+		2.229E-06   and   4.487E+03 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -6.245E+03 	 [ attachment = -6.245E+03 ; regularity = -2.837E-04 ]
+>> Estimation took: 00 seconds
+
+[ geodesic regression for subject sub-ADNI002S1070 ]
+
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+>> Initial t0 set by the user to 73.60 ; note that the mean visit age is 75.10
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/2_individual_geodesic_regressions/GeodesicRegression__subject_sub-ADNI002S1070/deformetrica-state.p.
+>> Reading 48 initial control points from file /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/2_individual_geodesic_regressions/tmp/regression_control_points__sub-ADNI002S1070.txt.
+>> Momenta initialized to zero.
+>> Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+>> Log-likelihood = -2.896E+03 	 [ attachment = -2.896E+03 ; regularity = -0.000E+00 ]
+>> Step size and gradient norm: 
+		6.748E-06   and   1.482E+03 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -2.881E+03 	 [ attachment = -2.881E+03 ; regularity = -2.770E-04 ]
+>> Estimation took: 00 seconds
+
+[ geodesic regression for subject sub-ADNI002S1268 ]
+
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+>> Initial t0 set by the user to 82.70 ; note that the mean visit age is 85.21
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/2_individual_geodesic_regressions/GeodesicRegression__subject_sub-ADNI002S1268/deformetrica-state.p.
+>> Reading 48 initial control points from file /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/2_individual_geodesic_regressions/tmp/regression_control_points__sub-ADNI002S1268.txt.
+>> Momenta initialized to zero.
+>> Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+>> Log-likelihood = -3.847E+03 	 [ attachment = -3.847E+03 ; regularity = -0.000E+00 ]
+>> Step size and gradient norm: 
+		4.056E-06   and   2.466E+03 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -3.823E+03 	 [ attachment = -3.823E+03 ; regularity = -2.462E-04 ]
+>> Estimation took: 00 seconds
+
+[ geodesic regression for subject sub-ADNI002S4171 ]
+
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+>> Initial t0 set by the user to 69.40 ; note that the mean visit age is 69.90
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/2_individual_geodesic_regressions/GeodesicRegression__subject_sub-ADNI002S4171/deformetrica-state.p.
+>> Reading 48 initial control points from file /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/2_individual_geodesic_regressions/tmp/regression_control_points__sub-ADNI002S4171.txt.
+>> Momenta initialized to zero.
+>> Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+>> Log-likelihood = -1.988E+03 	 [ attachment = -1.988E+03 ; regularity = -0.000E+00 ]
+>> Step size and gradient norm: 
+		1.767E-05   and   5.659E+02 	[ momenta ]
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -1.982E+03 	 [ attachment = -1.982E+03 ; regularity = -3.349E-04 ]
+>> Estimation took: 00 seconds
+
+[ initializing heuristics for individual accelerations and onset ages ]
+
+>> Estimated fixed effects:
+		 time_shift_std    =	6.534
+		 acceleration_std  =	0.038
+>> Estimated random effect statistics:
+		 onset_ages    =	74.704	[ mean ]	+/-	6.5345	[std]
+		 accelerations =	1.0000	[ mean ]	+/-	0.0381	[std]
+
+[ shoot from the average baseline age to the global average ]
+
+[ tangent-space ICA on the projected individual momenta ]
+
+>> No initial modulation matrix given, neither a number of sources. The latter will be ARBITRARILY defaulted to 4.
+>> Mean relative residual: 98.827 %.
+>> Estimated random effect statistics:
+		 sources =	0.096	[ mean ]	+/-	1.0495	[std]
+
+[ longitudinal registration of all subjects ]
+
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+>> Initial t0 set to the mean visit age: 74.70
+>> Initial time-shift std set by the user to 6.53 ; note that the empirical std of the visit ages is 6.93
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/4_longitudinal_registration/deformetrica-state.p.
+>> Using a Sobolev gradient for the template data with the ScipyLBFGS estimator memory length being larger than 1. Beware: that can be tricky.
+
+[ estimate_longitudinal_registration function ]
+
+[ longitudinal registration of subject sub-ADNI002S0729 ]
+
+LongitudinalAtlas model currently only accepts KERNEL gpu mode. Forcing KERNEL gpu mode.
+>> Objects noise dimension:
+		[ RightHippocampus ]	1152
+>> Reading 48 initial control points from file /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__ControlPoints__FromAtlasAndShooting.txt.
+>> Reading initial momenta from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Momenta__FromRegressionsAndShooting.txt.
+>> Reading 4-source initial modulation matrix from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__ModulationMatrix__FromICA.txt
+>> Reading initial sources from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Sources__FromICA.txt
+>> Reading initial onset ages from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__OnsetAges__FromHeuristic.txt
+>> Reading initial accelerations from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Accelerations__FromHeuristic.txt
+
+[ update method of the ScipyOptimize optimizer ]
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -3.140E+03 	 [ attachment = -3.138E+03 ; regularity = -2.827E+00 ]
+>> Log-likelihood = -3.445E+03 	 [ attachment = -3.138E+03 ; regularity = -3.070E+02 ]
+>> Number of line search loops exceeded. Stopping.
+
+>> Estimation took: 00:00:00
+
+[ longitudinal registration of subject sub-ADNI002S1070 ]
+
+LongitudinalAtlas model currently only accepts KERNEL gpu mode. Forcing KERNEL gpu mode.
+>> Objects noise dimension:
+		[ RightHippocampus ]	1152
+>> Reading 48 initial control points from file /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__ControlPoints__FromAtlasAndShooting.txt.
+>> Reading initial momenta from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Momenta__FromRegressionsAndShooting.txt.
+>> Reading 4-source initial modulation matrix from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__ModulationMatrix__FromICA.txt
+>> Reading initial sources from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Sources__FromICA.txt
+>> Reading initial onset ages from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__OnsetAges__FromHeuristic.txt
+>> Reading initial accelerations from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Accelerations__FromHeuristic.txt
+
+[ update method of the ScipyOptimize optimizer ]
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -1.447E+03 	 [ attachment = -1.444E+03 ; regularity = -3.423E+00 ]
+>> Log-likelihood = -1.709E+03 	 [ attachment = -1.442E+03 ; regularity = -2.672E+02 ]
+>> Number of line search loops exceeded. Stopping.
+
+>> Estimation took: 00:00:00
+
+[ longitudinal registration of subject sub-ADNI002S1268 ]
+
+LongitudinalAtlas model currently only accepts KERNEL gpu mode. Forcing KERNEL gpu mode.
+>> Objects noise dimension:
+		[ RightHippocampus ]	1152
+>> Reading 48 initial control points from file /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__ControlPoints__FromAtlasAndShooting.txt.
+>> Reading initial momenta from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Momenta__FromRegressionsAndShooting.txt.
+>> Reading 4-source initial modulation matrix from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__ModulationMatrix__FromICA.txt
+>> Reading initial sources from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Sources__FromICA.txt
+>> Reading initial onset ages from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__OnsetAges__FromHeuristic.txt
+>> Reading initial accelerations from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Accelerations__FromHeuristic.txt
+
+[ update method of the ScipyOptimize optimizer ]
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -1.923E+03 	 [ attachment = -1.919E+03 ; regularity = -4.301E+00 ]
+>> Log-likelihood = -2.222E+03 	 [ attachment = -1.920E+03 ; regularity = -3.020E+02 ]
+>> Number of line search loops exceeded. Stopping.
+
+>> Estimation took: 00:00:00
+
+[ longitudinal registration of subject sub-ADNI002S4171 ]
+
+LongitudinalAtlas model currently only accepts KERNEL gpu mode. Forcing KERNEL gpu mode.
+>> Objects noise dimension:
+		[ RightHippocampus ]	1152
+>> Reading 48 initial control points from file /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__ControlPoints__FromAtlasAndShooting.txt.
+>> Reading initial momenta from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Momenta__FromRegressionsAndShooting.txt.
+>> Reading 4-source initial modulation matrix from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__ModulationMatrix__FromICA.txt
+>> Reading initial sources from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Sources__FromICA.txt
+>> Reading initial onset ages from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__OnsetAges__FromHeuristic.txt
+>> Reading initial accelerations from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Accelerations__FromHeuristic.txt
+
+[ update method of the ScipyOptimize optimizer ]
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -9.910E+02 	 [ attachment = -9.887E+02 ; regularity = -2.337E+00 ]
+>> Log-likelihood = -1.191E+03 	 [ attachment = -9.884E+02 ; regularity = -2.024E+02 ]
+>> Number of line search loops exceeded. Stopping.
+
+>> Estimation took: 00:00:00
+
+[ save the aggregated registration parameters of all subjects ]
+
+LongitudinalAtlas model currently only accepts KERNEL gpu mode. Forcing KERNEL gpu mode.
+>> Objects noise dimension:
+		[ RightHippocampus ]	1152
+>> Reading 48 initial control points from file /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__ControlPoints__FromAtlasAndShooting.txt.
+>> Reading initial momenta from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Momenta__FromRegressionsAndShooting.txt.
+>> Reading 4-source initial modulation matrix from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__ModulationMatrix__FromICA.txt
+>> Reading initial sources from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/4_longitudinal_registration/tmp/sources.txt
+>> Reading initial onset ages from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/4_longitudinal_registration/tmp/onset_ages.txt
+>> Reading initial accelerations from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/4_longitudinal_registration/tmp/acceleration.txt
+
+>> Estimated fixed effects:
+		 time_shift_std    =	6.534
+		 acceleration_std  =	0.038
+>> Estimated random effect statistics:
+		 onset_ages    =	74.704	[ mean ]	+/-	6.5345	[std]
+		 accelerations =	1.0000	[ mean ]	+/-	0.0381	[std]
+		 sources       =	0.0962	[ mean ]	+/-	1.0495	[std]
+
+[ longitudinal atlas estimation with the GradientAscent optimizer ]
+
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+>> Initial t0 set to the mean visit age: 74.70
+>> Initial time-shift std set by the user to 6.53 ; note that the empirical std of the visit ages is 6.93
+context has already been set
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/output__4/5_longitudinal_atlas_with_gradient_ascent/deformetrica-state.p.
+LongitudinalAtlas model currently only accepts KERNEL gpu mode. Forcing KERNEL gpu mode.
+>> Objects noise dimension:
+		[ RightHippocampus ]	1152
+>> Reading 48 initial control points from file /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__ControlPoints__FromAtlasAndShooting.txt.
+>> Reading initial momenta from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Momenta__RescaledWithLongitudinalRegistration.txt.
+>> Momenta prior std set to 2.524E-01.
+>> Reading 4-source initial modulation matrix from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__ModulationMatrix__FromICA.txt
+>> The time shift variance prior degrees of freedom parameter is ARBITRARILY set to 1.
+>> The acceleration variance prior degrees of freedom parameter is ARBITRARILY set to 1.
+>> Reading initial sources from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Sources__FromLongitudinalRegistration.txt
+>> Reading initial onset ages from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__OnsetAges__FromLongitudinalRegistration.txt
+>> Reading initial accelerations from file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/longitudinal_atlas/hippocampi/data/ForInitialization__Accelerations__FromLongitudinalRegistration.txt
+>> Started estimator: GradientAscent
+------------------------------------- Iteration: 0 -------------------------------------
+>> Log-likelihood = -7.489E+03 	 [ attachment = -7.489E+03 ; regularity = 0.000E+00 ]
+>> Step size and gradient norm: 
+		8.707E-07   and   1.148E+04 	[ landmark_points ]
+		1.015E-05   and   9.853E+02 	[ momenta ]
+		8.586E-06   and   1.165E+03 	[ modulation_matrix ]
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -7.469E+03 	 [ attachment = -7.469E+03 ; regularity = -7.857E-04 ]
+>> Estimation took: 01 seconds

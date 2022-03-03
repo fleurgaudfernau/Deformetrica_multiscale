@@ -1,0 +1,32 @@
+Logger has been set to: DEBUG
+>> No initial CP spacing given: using diffeo kernel width of 3.0
+OMP_NUM_THREADS found in environment variables. Using value OMP_NUM_THREADS=1
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/digits/output_saved__1/deformetrica-state.p.
+{'memory_length': 10, 'freeze_template': True, 'max_line_search_iterations': 10, 'optimized_log_likelihood': 'complete', 'optimization_method_type': 'scipylbfgs', 'max_iterations': 3, 'convergence_tolerance': 1e-06, 'print_every_n_iters': 1, 'save_every_n_iters': 50, 'use_cuda': False, 'state_file': '/home/alexandre.bone/Softwares/deformetrica/tests/functional_tests/data/atlas/digits/output_saved__1/deformetrica-state.p', 'load_state_file': False}
+>> Set of 36 control points defined.
+>> Momenta initialized to zero, for 5 subjects.
+Starting multiprocess using 5 processes
+Multiprocess pool started using start method "file_descriptor" in: 0.043150076642632484 seconds
+You are trying to run more processes than there are available GPUs, it is advised to run `nvidia-cuda-mps-control` to leverage concurrent cuda executions. If run in background mode, don't forget to stop the daemon when done.
+dtype=float64
+Started estimator: ScipyOptimize
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+time taken for deformations : 1.2966633643954992
+>> Log-likelihood = -1.314E+04 	 [ attachment = -1.314E+04 ; regularity = 0.000E+00 ]
+time taken for deformations : 0.123958395794034
+>> Log-likelihood = -1.219E+04 	 [ attachment = -1.219E+04 ; regularity = -2.238E+00 ]
+
+------------------------------------- Iteration: 2 -------------------------------------
+time taken for deformations : 0.10643352754414082
+>> Log-likelihood = -1.204E+04 	 [ attachment = -1.175E+04 ; regularity = -2.865E+02 ]
+
+------------------------------------- Iteration: 3 -------------------------------------
+time taken for deformations : 0.10256997868418694
+>> Log-likelihood = -9.625E+03 	 [ attachment = -9.441E+03 ; regularity = -1.839E+02 ]
+>> STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT
+>> Estimation took: 01 seconds
+Deformetrica.__del__()

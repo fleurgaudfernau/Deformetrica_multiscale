@@ -1,0 +1,25 @@
+Logger has been set to: DEBUG
+>> No initial CP spacing given: using diffeo kernel width of 20.0
+OMP_NUM_THREADS was not found in environment variables. An automatic value will be set.
+OMP_NUM_THREADS will be set to 4
+nofile (soft): 1024, nofile (hard): 4096
+>> No specified state-file. By default, Deformetrica state will by saved in file: /tmp/pycharm_project_752/tests/functional_tests/data/registration/tetris/output__2/deformetrica-state.p.
+>> Using a Sobolev gradient for the template data with the ScipyLBFGS estimator memory length being larger than 1. Beware: that can be tricky.
+>> Setting the image grid downsampling factor to: 2.
+instantiating kernel keops with kernel_width 20.0 and gpu_mode GpuMode.FULL. addr: 0x7f9d15112a90
+>> Set of 15 control points defined.
+>> Momenta initialized to zero, for 1 subjects.
+dtype=float64
+>> Started estimator: ScipyOptimize
+
+>> Scipy optimization method: L-BFGS-B
+
+------------------------------------- Iteration: 1 -------------------------------------
+>> Log-likelihood = -3.300E+04 	 [ attachment = -3.300E+04 ; regularity = 0.000E+00 ]
+>> Log-likelihood = -3.010E+04 	 [ attachment = -3.010E+04 ; regularity = -2.113E+00 ]
+
+------------------------------------- Iteration: 2 -------------------------------------
+>> Log-likelihood = -2.755E+04 	 [ attachment = -2.754E+04 ; regularity = -1.211E+01 ]
+>> STOP: TOTAL NO. of ITERATIONS EXCEEDS LIMIT
+>> Estimation took: 02 seconds
+Deformetrica.__del__()

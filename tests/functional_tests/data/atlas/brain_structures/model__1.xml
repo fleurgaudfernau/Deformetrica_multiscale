@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<model>
+
+    <model-type>DeterministicAtlas</model-type>
+    <dimension>3</dimension>
+    <dtype>float64</dtype>
+
+    <template>
+        <object id="amygdala">
+            <deformable-object-type>SurfaceMesh</deformable-object-type>
+            <attachment-type>Varifold</attachment-type>
+            <noise-std>10.0</noise-std>
+            <kernel-type>torch</kernel-type>
+            <kernel-width>15</kernel-width>
+            <filename>data/amyg_prototype_decimated.vtk</filename>
+        </object>
+        <object id="hippo">
+            <deformable-object-type>SurfaceMesh</deformable-object-type>
+            <attachment-type>Current</attachment-type>
+            <noise-std>6.0</noise-std>
+            <kernel-type>torch</kernel-type>
+            <kernel-width>15</kernel-width>
+            <filename>data/hippo_prototype_decimated.vtk</filename>
+        </object>
+    </template>
+
+    <deformation-parameters>
+        <kernel-width>10</kernel-width>
+        <number-of-timepoints>9</number-of-timepoints>
+        <kernel-type>torch</kernel-type>
+    </deformation-parameters>
+
+</model>
