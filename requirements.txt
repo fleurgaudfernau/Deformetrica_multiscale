@@ -12,5 +12,5 @@ torch==1.6
 torchvision==0.7
 psutil>=5.4.8
 vtk>=8.2.0
-pykeops==2.0b1
+pykeops==2.0b1 #to correct compatibility issue 
 PyQt5
