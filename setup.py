@@ -96,7 +96,7 @@ def build_deformetrica():
             'torchvision==0.7',
             'psutil>=5.4.8',
             'vtk>=8.2.0',
-            'pykeops==1.0b1',
+            'pykeops==2.0b1',
             'PyQt5'
         ],
         extra_link_args=['-Wl,-headerpad_max_install_names']
@@ -149,7 +149,7 @@ def build_deformetrica_nox():
             'torchvision==0.5',
             'psutil>=5.4.8',
             'vtk>=8.2.0',
-            'pykeops==1.0b1',
+            'pykeops==2.0b1',
             'PyQt5'
         ],
         extra_link_args=['-Wl,-headerpad_max_install_names']
