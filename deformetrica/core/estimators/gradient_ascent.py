@@ -382,7 +382,7 @@ class GradientAscent(AbstractEstimator):
             #momenta update 
             for s in range(len(new_parameters["haar_coef_momenta"])): 
                 for d in range(self.dimension): 
-                    momenta_rec_along_dim = new_parameters["haar_coef_momenta"][s][d].haar_backward()
+                    momenta_rec_along_dim = new_parameters["haar_coef_momenta"][s][d].haar_inverse()
                     new_parameters['momenta'][s, :, d] = momenta_rec_along_dim.flatten()
             
         return new_parameters
