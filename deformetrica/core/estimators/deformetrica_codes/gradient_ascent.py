@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 from ...core import default
 from ...core.estimators.abstract_estimator import AbstractEstimator
-from ...support.utilities.wavelets import WaveletTransform, haar_forward, haar_IWT_mat, haar_FWT_mat, haar_backward_transpose
+from ...support.utilities.wavelets import WaveletTransform, haar_forward, haar_IWT_mat, haar_FWT_mat, haar_inverse_transpose
 
 logger = logging.getLogger(__name__)
 
@@ -470,7 +470,7 @@ class GradientAscent(AbstractEstimator):
             for s in range(len(new_parameters["coarse_momenta"])): #for each sub
                 for d in range(self.statistical_model.dimension): #for each dim
                     print("check gamma", new_parameters["coarse_momenta"][s][d].gamma)
-                    momenta_rec_along_dim = new_parameters["coarse_momenta"][s][d].haar_backward()
+                    momenta_rec_along_dim = new_parameters["coarse_momenta"][s][d].haar_inverse()
                     new_parameters['momenta'][s, :, d] = momenta_rec_along_dim.flatten()
             #print("\nnew_parameters['momenta'][1] after update", new_parameters['momenta'][1])
             
@@ -480,7 +480,7 @@ class GradientAscent(AbstractEstimator):
                     
             #         new_parameters["coarse_points"][d].wc += gradient["coarse_points"][d].wc * step["coarse_points"]
             #         #points update
-            #         points_rec_along_dim = new_parameters["coarse_points"][d].haar_backward()
+            #         points_rec_along_dim = new_parameters["coarse_points"][d].haar_inverse()
             #         new_parameters['control_points'][:, d] = points_rec_along_dim.flatten()
 
         return new_parameters

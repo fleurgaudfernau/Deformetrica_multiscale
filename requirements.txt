@@ -2,7 +2,7 @@
 # ***** Requirements with Version Specifiers *****
 #   See https://www.python.org/dev/peps/pep-0440/#version-specifiers
 
-cachetools==4.2.4
+cachetools>=4.2.4
 numpy>=1.16.2
 scikit-learn>=0.20.3
 matplotlib>=2.2.2

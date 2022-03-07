@@ -13,7 +13,7 @@ from ...core.observations.deformable_objects.deformable_multi_object import Defo
 from ...in_out.array_readers_and_writers import *
 from ...in_out.dataset_functions import create_template_metadata
 from ...support import utilities
-from ...support.utilities.wavelets import haar_backward_transpose
+from ...support.utilities.wavelets import haar_inverse_transpose
 
 
 logger = logging.getLogger(__name__)
@@ -39,7 +39,7 @@ def _compute_haar_transform_of_gradients(dimension, gradient, current_scale, poi
 
         for d in range(dimension):
             gradient_of_momenta = gradient['momenta'][s, :, d].reshape(tuple(points_per_axis))
-            gradient_of_coef = haar_backward_transpose(gradient_of_momenta, J = None)
+            gradient_of_coef = haar_inverse_transpose(gradient_of_momenta, J = None)
             gradient_of_coef = _silence_fine_zones(current_scale, gradient_of_coef)   
             subject_gradient.append(gradient_of_coef)
         
@@ -234,7 +234,7 @@ class DeterministicAtlas(AbstractStatisticalModel):
         print("\n Initialisation - coarse to fine on momenta")
 
         for s in range(self.fixed_effects['momenta'].shape[0]):
-            coefficients_sub = [haar_backward_transpose(self.fixed_effects['momenta'][s, :, d].reshape(tuple(self.points_per_axis))) \
+            coefficients_sub = [haar_inverse_transpose(self.fixed_effects['momenta'][s, :, d].reshape(tuple(self.points_per_axis))) \
                                 for d in range(self.dimension)]
             self.fixed_effects['haar_coef_momenta'].append(coefficients_sub)
 

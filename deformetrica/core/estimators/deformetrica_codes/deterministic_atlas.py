@@ -16,7 +16,7 @@ from ...in_out.array_readers_and_writers import *
 from ...in_out.dataset_functions import create_template_metadata
 from ...support import utilities
 
-from ...support.utilities.wavelets import WaveletTransform, haar_forward, haar_IWT_mat, haar_FWT_mat, haar_backward_transpose
+from ...support.utilities.wavelets import WaveletTransform, haar_forward, haar_IWT_mat, haar_FWT_mat, haar_inverse_transpose
 
 logger = logging.getLogger(__name__)
 
@@ -58,7 +58,7 @@ def _compute_haar_transform_of_gradients(dimension, gradient, zones, current_sca
         for d in range(dimension):
             gradient_of_momenta = gradient['momenta'][s, :, d].reshape(tuple(points_per_axis))
             #gradient_of_coef = haar_forward(gradient_of_momenta) #before 13/12
-            gradient_of_coef = haar_backward_transpose(gradient_of_momenta, J = None, gamma = 1)
+            gradient_of_coef = haar_inverse_transpose(gradient_of_momenta, J = None, gamma = 1)
             #gradient_of_coef = haar_forward(gradient_of_momenta, J = None, gamma = 0) 
 
             if not freeze_control_points:
@@ -1654,7 +1654,7 @@ class DeterministicAtlas(AbstractStatisticalModel):
             if scale < self.current_image_scale and type != ['L', 'L']:
                 intensities_haar.wc[indices] = 0
 
-        intensities = intensities_haar.haar_backward()
+        intensities = intensities_haar.haar_inverse()
 
         return intensities
 

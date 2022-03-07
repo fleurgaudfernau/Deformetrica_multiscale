@@ -2,12 +2,43 @@
 import numpy as np
 
 from cachetools import cached
+HaarCache = dict()
 
 #%% Haar Transform
 
-SQRTTWO = np.sqrt(2)
-
 class WaveletTransform:
+    '''
+    A class for Haar Wavelet transform
+
+    ...
+    Attributes
+    ----------
+    wc : numpy array
+        wavelet coefficients
+    ws : numpy array
+        approximation space sizes
+    renorm : numpy array
+        coefficient renormalization factors
+    J : int
+        maximal scale
+    gamma : float
+        global renormalization factor (default = 1, orthonormal setting) 
+
+    Methods
+    -------
+    copy():
+        copy the wavelet transform structure
+    
+    haar_forward(X, J=None, gamma=1):
+        compute the Haar Forward Wavelet Transform up to scale J with a renormalization factor gamma.
+        The default gamma=1 corresponds to the orthogonal transform.
+
+    haar_inverse():
+        compute the Haar Inverse Wavelet transform of the wavelet coefficients stored in wc.
+
+    haar_inverse_transpose(X, J=None, gamma=1):
+        compute the transpose of the Haar Inverse Wavelet transform.
+    '''
     wc = None ## Wavelet coefficients
     ws = None ## Approximation space sizes
     renorm = None ## renormalization scale
@@ -22,6 +53,62 @@ class WaveletTransform:
         H.renorm = self.renorm.copy()
         H.J = self.J
         return(H)
+
+    def haar_forward(self, X, J=None, gamma=1):
+        '''
+        haar_forward(X, J=None, gamma=1):
+        compute the Haar Forward Wavelet Transform up to scale J with a renormalization factor gamma.
+        The default gamma=1 corresponds to the orthogonal transform.
+        The result is stored in wc while the approximation space sizes are stored in ws
+        and the coefficients renormalization factor are stored in renorm.
+        '''
+        self.wc = X.copy()
+        self.gamma = gamma
+        self.ws = [ [d] for d in self.wc.shape]
+        if J is None:
+            J = np.ceil(np.log2(np.max(self.wc.shape))).astype('int')
+        self.J = J
+        
+        for j in range(J):
+            self._haar_forward_step(j)
+
+        if np.abs(self.gamma)>1e-8 :
+            self.renorm = _haar_FWT_renorm_shape(X.shape, J=J)
+        else:
+            self.renorm = np.ones_like(self.wc)
+
+        self.wc = self.wc * np.power(self.renorm, self.gamma)
+
+        return(self)
+
+    def haar_inverse(self):
+        '''
+        haar_inverse():
+        compute the Haar Inverse Wavelet transform of the wavelet coefficients stored in wc.
+        '''
+        wc = self.wc.copy()
+        ws = self.ws.copy()
+        J = self.J
+
+        self._haar_inverse_inplace()
+
+        X = self.wc.copy()
+        self.wc = wc
+        self.ws = ws
+        self.J = J
+        return(X)
+
+    def haar_inverse_transpose(self, X, J=None, gamma=1):
+        '''
+        haar_inverse_transpose(X, J=None, gamma=1):
+        compute the transpose of the Haar Inverse Wavelet transform.
+        It uses the fact that this operation is the forward transform up to a different renormalization.
+        '''
+        return(self.haar_forward(X, J, 2 - gamma))
+
+    # all functions need to computed the transform are defined below
+    # excepect for the renormalization part which is shared (and cached)
+    # between instances
 
     def _haar_forward_step_1d(self, wc_cur, dim: int, j):
         wc_swap = wc_cur.swapaxes(dim, 0)
@@ -56,7 +143,7 @@ class WaveletTransform:
             self._haar_forward_step_1d(wc_lowcur, i, j)
 
 
-    def _haar_backward_step_1d(self, wc_cur, dim: int, j):
+    def _haar_inverse_step_1d(self, wc_cur, dim: int, j):
 
         wc_swap = wc_cur.swapaxes(dim, 0)
         n = self.ws[dim][1]
@@ -83,51 +170,19 @@ class WaveletTransform:
         wc_swap[:] = wc_cur
         self.ws[dim] = self.ws[dim][1:]
 
-    def _haar_backward_step(self, j):
+    def _haar_inverse_step(self, j):
         wc_cur = self.wc[tuple([slice(None, s[1]) for s in self.ws])]
         for i,dd in enumerate(self.wc.shape):
-            self._haar_backward_step_1d(wc_cur, i, j)
-
-    def haar_forward(self, X, J = None, gamma = 1):
-        self.wc = X.copy()
-        self.gamma = gamma
-        self.ws = [ [d] for d in self.wc.shape]
-        if J is None:
-            J = np.ceil(np.log2(np.max(self.wc.shape))).astype('int')
-        self.J = J
-        
-        for j in range(J):
-            self._haar_forward_step(j)
-
-        if np.abs(self.gamma)>1e-8 :
-            self.renorm = haar_FWT_renorm_shape(X.shape, J=J)
-        else:
-            self.renorm = np.ones_like(self.wc)
-
-        self.wc = self.wc * np.power(self.renorm, self.gamma)
-
-        return(self)
+            self._haar_inverse_step_1d(wc_cur, i, j) 
 
 
-    def haar_backward_inplace(self):
+    def _haar_inverse_inplace(self):
         self.wc = self.wc / np.power(self.renorm, self.gamma)
         for j in range(self.J):
-            self._haar_backward_step(self.J-j-1)
+            self._haar_inverse_step(self.J - j - 1)
         self.J = 0
         return(self)
 
-    def haar_backward(self):
-        wc = self.wc.copy()
-        ws = self.ws.copy()
-        J = self.J
-
-        self.haar_backward_inplace()
-
-        X = self.wc.copy()
-        self.wc = wc
-        self.ws = ws
-        self.J = J
-        return(X)
 
     def _haar_coeff_scale_1D(self, i, s):
         delta = [s - i for s in s]
@@ -163,7 +218,7 @@ class WaveletTransform:
 
         pos = [self._haar_coeff_pos_1D(i, s, delta_J) for i,s in zip(ind, self.ws)]
         type = [self._haar_coeff_type_1D(i, s, delta_J) for i,s in zip(ind, self.ws)]
-        return (pos, type, self.J-delta_J)
+        return (pos, type, self.J - delta_J)
 
     def __repr__(self):
         return "Haar Transform\nCoeffs: " + str(self.wc) +\
@@ -171,50 +226,36 @@ class WaveletTransform:
  
 
 
-def haar_forward(X, J = None, gamma = 1):
+def haar_forward(X, J=None, gamma=1):
+    '''
+    haar_forward(X, J=None, gamma=1):
+        create and compute the Haar Forward Wavelet Transform of an array X up to scale J
+        with renormalization factor gamma.
+        The default gamma=1 corresponds to the orthonormal transform.
+    '''
     haar = WaveletTransform()
     haar.haar_forward(X, J, gamma)
-    return(haar)
-
-def haar_backward_transpose(X, J = None, gamma = 1):
-    haar = WaveletTransform()
-    haar.haar_forward(X, J, gamma)
-    IWT_transpose = haar_IWT_mat_shape(X.shape, J, gamma).T
-    haar.wc.flat = IWT_transpose @ X.flat
     return(haar) 
 
+def haar_inverse_transpose(X, J=None, gamma=1):
+    '''
+    haar_inverse_transpose(X, J=None, gamma=1)
+        create and compute the transpose of the Haar Inverse Wavelet Transform of an array X up to scale J
+        with renormalization factor gamma.
+        The default gamma=1 corresponds to the orthonormal transform.
+    '''
+    haar = WaveletTransform()
+    haar.haar_inverse_transpose(X, J, gamma)
+    return(haar) 
 
-@cached(cache={})
-def haar_IWT_mat_shape(shape, J = None, gamma = 1):
+# The functions below are used to compute the renormalization
+# Note that the IWT function is here only for completness.
+@cached(HaarCache)
+def _haar_FWT_mat_shape(shape, J=None, gamma=1):
     X = np.zeros(shape=shape)
-    return(haar_IWT_mat(X, J, gamma))
+    return(_haar_FWT_mat(X, J, gamma))
 
-def haar_IWT_mat(X, J = None, gamma = 1):
-    haar = haar_forward(X, J, gamma)
-    nc = np.prod(haar.wc.shape)
-    M = np.zeros(shape = (nc, nc))
-    ws_ori = haar.ws.copy()
-    for i in range(nc):
-        haar.wc = np.zeros(shape=haar.wc.shape)
-        haar_flat = haar.wc.flat
-        haar_flat[i] = 1.
-        haar.ws = ws_ori.copy()
-        M[:,i] = haar.haar_backward().flatten()
-    return(M)
-
-@cached(cache={})
-def haar_FWT_renorm_shape(shape, J = None):
-    renorm = np.zeros(shape=shape)
-    FWT = haar_FWT_mat_shape(shape, J=J, gamma=0)
-    renorm.flat = 1 / np.sqrt(np.sum(FWT * FWT, axis=1))
-    return(renorm)
-
-@cached(cache={})
-def haar_FWT_mat_shape(shape, J = None, gamma = 1):
-    X = np.zeros(shape=shape)
-    return(haar_FWT_mat(X, J, gamma))
-
-def haar_FWT_mat(X, J = None, gamma = 1):
+def _haar_FWT_mat(X, J=None, gamma=1):
     nc = np.prod(X.shape)
     M = np.zeros(shape = (nc, nc))
     for i in range(nc):
@@ -224,24 +265,27 @@ def haar_FWT_mat(X, J = None, gamma = 1):
         M[:,i] = haar.wc.flatten()
     return(M)
 
+@cached(HaarCache)
+def _haar_IWT_mat_shape(shape, J=None, gamma=1):
+    X = np.zeros(shape=shape)
+    return(_haar_IWT_mat(X, J, gamma))
 
+def _haar_IWT_mat(X, J=None, gamma=1):
+    haar = haar_forward(X, J, gamma)
+    nc = np.prod(haar.wc.shape)
+    M = np.zeros(shape=(nc, nc))
+    ws_ori = haar.ws.copy()
+    for i in range(nc):
+        haar.wc = np.zeros(shape=haar.wc.shape)
+        haar_flat = haar.wc.flat
+        haar_flat[i] = 1.
+        haar.ws = ws_ori.copy()
+        M[:,i] = haar.haar_inverse().flatten()
+    return(M)
 
-
-
-
-# %%
-S = np.reshape(np.linspace(0,27,40), newshape=(4,10))
-haar = haar_forward(S, J=2, gamma=1)
-haar.haar_backward() - S
-
-# %%
-S = np.reshape(np.linspace(0,27,16*16), newshape=(16,16))
-haar = haar_forward(S, gamma=1)
-haar.haar_backward() - S
-
-# %%
-haar_backward_transpose(S, J=2, gamma=2)
-# %%
-haar._haar_coeff_scale_1D(3, haar.ws[0])
-# %%
-
+@cached(HaarCache)
+def _haar_FWT_renorm_shape(shape, J=None):
+    renorm = np.zeros(shape=shape)
+    FWT = _haar_FWT_mat_shape(shape, J=J, gamma=0)
+    renorm.flat = 1 / np.sqrt(np.sum(FWT * FWT, axis=1))
+    return(renorm)
