@@ -1,7 +1,9 @@
 # Multiscale Deformetrica
 
 This code is an extension of the software Deformetrica.
-It implements a coarse-to-fine strategy for atlas construction.
+It implements a coarse-to-fine strategy for atlas construction / image registration.
+
+<div align="center"><img src="/digit_ctf_cv_k3_fold_4_colors.gif" width="200"/></div>
 
 ## Installation
       
