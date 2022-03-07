@@ -86,6 +86,7 @@ def build_deformetrica():
             'Topic :: Software Development :: Libraries'
         ],
         install_requires=[
+            'cachetools>=4.2.4',
             'numpy>=1.16.2',
             'scikit-learn>=0.20.3',
             'matplotlib>=2.2.2',
@@ -95,7 +96,7 @@ def build_deformetrica():
             'torchvision==0.7',
             'psutil>=5.4.8',
             'vtk>=8.2.0',
-            'pykeops==1.4.1',
+            'pykeops==1.0b1',
             'PyQt5'
         ],
         extra_link_args=['-Wl,-headerpad_max_install_names']
@@ -138,6 +139,7 @@ def build_deformetrica_nox():
             'Topic :: Software Development :: Libraries'
         ],
         install_requires=[
+            'cachetools>=4.2.4',
             'numpy>=1.16.2',
             'scikit-learn>=0.20.3',
             'matplotlib>=2.2.2',
@@ -147,7 +149,7 @@ def build_deformetrica_nox():
             'torchvision==0.5',
             'psutil>=5.4.8',
             'vtk>=8.2.0',
-            'pykeops==1.4.1',
+            'pykeops==1.0b1',
             'PyQt5'
         ],
         extra_link_args=['-Wl,-headerpad_max_install_names']
